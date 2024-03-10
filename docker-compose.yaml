@@ -1,0 +1,20 @@
+version: "1"
+
+volumes:
+  dev_it_postgres_data: {}
+
+services:
+  optionscout:
+    image: postgres:15.2
+    container_name: dev_it_postgres
+    volumes:
+      - dev_it_postgres_data:/var/lib/postgresql/data:Z
+
+    # make sure these values match the ones in your .env.local and/or .env file
+    # e.g. OPTIONSCOUT_DATABASE_URL=postgresql://me:secure_pwd@127.0.0.1:5432/dev_it
+    environment:
+      - POSTGRES_DB=dev_it
+      - POSTGRES_USER=me
+      - POSTGRES_PASSWORD=secure_pwd
+    ports:
+      - "5432:5432"

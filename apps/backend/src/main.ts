@@ -1,21 +1,21 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
-import express from 'express';
-import * as path from 'path';
+import express, { Request, Response } from 'express';
+import { router } from './routes';
+import cookieParser from 'cookie-parser';
+import { errorMiddleware } from '@/src/middleware/error.middleware';
+const host = process.env.HOST ?? 'localhost';
+const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = express();
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use(express.json());
+app.use(cookieParser());
+app.use(router);
+// app.use(errorMiddleware);
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to backend!' });
+app.get('/', (req: Request, res: Response) => {
+  res.send({ message: 'Hello API' });
 });
 
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
+app.listen(port, host, () => {
+  console.log(`[ ready ] http://${host}:${port}`);
 });
-server.on('error', console.error);
