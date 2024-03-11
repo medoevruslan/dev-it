@@ -1,6 +1,6 @@
-import ProfileImage from '@/assets/Ellipse 1.png'
-import { Profile } from '@/components/profile'
-import { Meta, StoryObj } from '@storybook/react'
+import ProfileImage from '@/src/assets/person-outline.svg';
+import { Meta, StoryObj } from '@storybook/react';
+import { Profile } from './profile';
 
 const meta = {
   component: Profile,
@@ -9,11 +9,11 @@ const meta = {
   },
   tags: ['autodocs'],
   title: 'Component/Profile',
-} satisfies Meta<typeof Profile>
+} satisfies Meta<typeof Profile>;
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const ProfileHeaderDefault: Story = {
   args: {
@@ -21,4 +21,4 @@ export const ProfileHeaderDefault: Story = {
     imageSrc: ProfileImage,
     name: 'Ivan',
   },
-}
+};

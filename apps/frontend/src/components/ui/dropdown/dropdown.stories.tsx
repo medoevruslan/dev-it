@@ -1,11 +1,11 @@
-import { Profile } from '@/components/profile'
-import { Dropdown, DropdownItem } from '@/components/ui/dropdown'
-import { Icon } from '@/components/ui/icon/icon'
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react';
 
-import s from '@/components/ui/dropdown/dropdown.module.scss'
+import s from '@/components/ui/dropdown/dropdown.module.scss';
 
-import ProfileImage from '../../../assets/Ellipse 1.png'
+import ProfileImage from '../../../assets/Ellipse 1.png';
+import { Dropdown, DropdownItem } from './dropdown';
+import { Icon } from '../icon';
+import { Profile } from '../../profile';
 
 const meta = {
   component: Dropdown,
@@ -14,11 +14,11 @@ const meta = {
   },
   tags: ['autodocs'],
   title: 'Component/Dropdown',
-} satisfies Meta<typeof Dropdown>
+} satisfies Meta<typeof Dropdown>;
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const DropdownWithoutIcons: Story = {
   render: () => {
@@ -36,9 +36,9 @@ export const DropdownWithoutIcons: Story = {
           <a href={'javascript:void;'}>Delete</a>
         </DropdownItem>
       </Dropdown>
-    )
+    );
   },
-}
+};
 
 export const DropdownWithIcons: Story = {
   render: () => {
@@ -65,13 +65,19 @@ export const DropdownWithIcons: Story = {
           </a>
         </DropdownItem>
       </Dropdown>
-    )
+    );
   },
-}
+};
 
 export const DropdownWithProfile: Story = {
   args: {
-    headerItem: <Profile email={'j&johnson@gmail.com'} imageSrc={ProfileImage} name={'Ivan'} />,
+    headerItem: (
+      <Profile
+        email={'j&johnson@gmail.com'}
+        imageSrc={ProfileImage}
+        name={'Ivan'}
+      />
+    ),
     rootTrigger: (
       <img
         alt={'open dropdown'}
@@ -82,7 +88,7 @@ export const DropdownWithProfile: Story = {
       />
     ),
   },
-  render: args => {
+  render: (args) => {
     return (
       <Dropdown {...args}>
         <DropdownItem>
@@ -99,6 +105,6 @@ export const DropdownWithProfile: Story = {
           </a>
         </DropdownItem>
       </Dropdown>
-    )
+    );
   },
-}
+};

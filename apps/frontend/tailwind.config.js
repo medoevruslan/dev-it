@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        'radix-select-trigger-width': 'var(--radix-select-trigger-width)',
+      },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
