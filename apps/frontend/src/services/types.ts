@@ -5,3 +5,10 @@ export type User = {
   created: string;
   updated: string;
 };
+
+export type Article = {
+  author: string;
+  title: string;
+  content: string;
+  link: string;
+};

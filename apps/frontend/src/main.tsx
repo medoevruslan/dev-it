@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import '@/src/styles/global.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import App from './app';
 

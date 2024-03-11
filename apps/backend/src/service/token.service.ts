@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { TokenModel } from '../model/token.model';
 import { UserDto } from '@/src/dtos/user-dto';
+import { ACCESS_TOKEN_AGE, REFRESH_TOKEN_AGE } from '@/src/constants';
 
 declare module 'jsonwebtoken' {
   export interface UserIDJwtPayload extends jwt.JwtPayload {
@@ -16,11 +17,13 @@ const refreshTokenSecret = 'your-refresh-secret-key';
 export class TokenService {
   #model = new TokenModel();
   generateAccessToken(user: UserDto) {
-    return jwt.sign(user, secretKey, { expiresIn: '15m' });
+    return jwt.sign(user, secretKey, { expiresIn: `${ACCESS_TOKEN_AGE}m` });
   }
 
   generateRefreshToken = (user: UserDto) => {
-    return jwt.sign(user, refreshTokenSecret, { expiresIn: '7d' });
+    return jwt.sign(user, refreshTokenSecret, {
+      expiresIn: `${REFRESH_TOKEN_AGE}d`,
+    });
   };
 
   generateTokens = (user: UserDto) => {

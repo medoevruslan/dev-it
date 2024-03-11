@@ -27,6 +27,14 @@ model Token {
   user         User   @relation(fields: [userId], references: [id])
 }
 
+model Article {
+  id      String @id @default(cuid())
+  author  String
+  title   String @unique
+  content String
+  link    String
+}
+
 enum Role {
   ADMIN
   USER

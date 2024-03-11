@@ -4,6 +4,7 @@ import { CreateUserType } from '../controller/auth.controller';
 import { TokenService } from './token.service';
 import { UserDto } from '../dtos/user-dto';
 import { UserIDJwtPayload } from 'jsonwebtoken';
+import { ApiError } from '@/src/exceptions/api-error';
 
 export type CreateUserModel = Omit<CreateUserType, 'passwordConfirmation'>;
 
@@ -86,6 +87,22 @@ export class UserService {
       refreshToken,
       userDto,
     };
+  }
+
+  async me(token: string) {
+    const userData = tokenService.validateAccessToken<UserIDJwtPayload>(token);
+
+    if (!userData) {
+      throw ApiError.UnauthorizedError();
+    }
+
+    const user = await this.#model.getById(userData.userId);
+
+    if (!user) {
+      throw ApiError.BadRequest('User not found', []);
+    }
+
+    return new UserDto(user);
   }
 
   async logout(token: string) {

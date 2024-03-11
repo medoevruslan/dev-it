@@ -1,0 +1,74 @@
+a, button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .pages {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .page {
+      width: 24px;
+      height: 24px;
+      color: var(--color-light-100);
+      background-color: transparent;
+      border-radius: 2px;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        background-color: var(--color-dark-500);
+      }
+
+      &.active {
+        background-color: #fff;
+        color: var(--color-dark-900);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-info-900);
+      }
+    }
+
+    .dots {
+      pointer-events: none;
+    }
+
+    .arrow {
+      cursor: pointer;
+      transition: color .2s ease-in;
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: var(--color-accent-500);
+      }
+      &:disabled {
+        pointer-events: none;
+        svg {
+          color: var(--color-dark-100);
+        }
+      }
+    }
+  }
+
+  .selectPerPage {
+    min-width: unset;
+    padding: 0 6px;
+    gap: 10px;
+  }
+
+  .containerPerPage {
+    display: flex;
+    gap: 6px;
+  }
+
+}
+
+
+

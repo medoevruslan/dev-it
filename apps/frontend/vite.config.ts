@@ -1,5 +1,5 @@
 /// <reference types='vitest' />
-import { defineConfig } from 'vite';
+import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import path from 'path';
@@ -13,6 +13,9 @@ export default defineConfig({
   },
 
   server: {
+    fs: {
+      allow: [searchForWorkspaceRoot(process.cwd())],
+    },
     port: 4200,
     host: 'localhost',
   },

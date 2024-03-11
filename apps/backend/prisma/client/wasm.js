@@ -123,6 +123,14 @@ exports.Prisma.TokenScalarFieldEnum = {
   userId: 'userId'
 };
 
+exports.Prisma.ArticleScalarFieldEnum = {
+  id: 'id',
+  author: 'author',
+  title: 'title',
+  content: 'content',
+  link: 'link'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -139,7 +147,8 @@ exports.Role = exports.$Enums.Role = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  Token: 'Token'
+  Token: 'Token',
+  Article: 'Article'
 };
 
 /**

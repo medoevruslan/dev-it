@@ -14,3 +14,8 @@ articleRouter.post(
   authMiddleware,
   articleController.createArticle
 );
+
+articleRouter.post(
+  '/v1/articles/parse',
+  articleController.parseArticlesFromRSS
+);

@@ -1,6 +1,8 @@
 import type { Request, Response } from 'express';
 import { z } from 'zod';
 import { UserService } from '../service/user.service';
+import { ApiError } from '@/src/exceptions/api-error';
+import { ACCESS_TOKEN_AGE, REFRESH_TOKEN_AGE } from '@/src/constants';
 
 const createUserSchema = z
   .object({
@@ -27,8 +29,22 @@ export type LoginUserType = z.infer<typeof loginUserSchema>;
 
 const userService = new UserService();
 
-const me = (req: Request, res: Response) => {
-  res.json({ me: 'me' });
+const me = async (req: Request, res: Response) => {
+  if (!req.cookies.accessToken) {
+    return res.status(401).end();
+  }
+  const { accessToken } = req.cookies;
+  try {
+    const user = await userService.me(accessToken);
+
+    return res.status(200).json(user);
+  } catch (err) {
+    if (err instanceof ApiError) {
+      return res.status(err.status).json({ message: err.message });
+    } else {
+      return res.status(500).json({ error: err.message });
+    }
+  }
 };
 
 const signup = async (
@@ -54,11 +70,11 @@ const signup = async (
 
     res.cookie('accessToken', user.accessToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 15,
+      maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
     }); // 15 minutes
     res.cookie('refreshToken', user.refreshToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 60 * 24 * 7,
+      maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
     }); // 7days
 
     res.json(user.userDto);
@@ -82,16 +98,15 @@ const login = async (
     const user = await userService.login(candidate.email, candidate.password);
     res.cookie('accessToken', user.accessToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 15,
+      maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
     }); // 15 minutes
     res.cookie('refreshToken', user.refreshToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 60 * 24 * 7,
+      maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
     }); // 7days
 
-    res.json(user.userDto);
+    res.json({ accessToken: user.accessToken });
   } catch (err) {
-    console.log(err);
     res.status(400).json({ error: err.message });
   }
 };
@@ -122,11 +137,11 @@ const refreshToken = async (req: Request, res: Response) => {
 
     res.cookie('accessToken', user.accessToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 15,
+      maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
     }); // 15 minutes
     res.cookie('refreshToken', user.refreshToken, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 60 * 24 * 7,
+      maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
     }); // 7days
 
     return res.status(204).json(user.userDto);

@@ -11,15 +11,18 @@ import { Button } from '@/src/components/ui/button';
 
 const SignupFormSchema = z
   .object({
-    confirmPassword: z.string().min(3),
+    passwordConfirmation: z.string().min(3),
     email: z.string().email(),
     username: z.string().min(1),
     password: z.string().min(3).max(10),
   })
-  .refine(({ confirmPassword, password }) => password === confirmPassword, {
-    message: "Passwords don't match",
-    path: ['confirmPassword'],
-  });
+  .refine(
+    ({ passwordConfirmation, password }) => password === passwordConfirmation,
+    {
+      message: "Passwords don't match",
+      path: ['confirmPassword'],
+    }
+  );
 
 export type SignupFormValues = z.infer<typeof SignupFormSchema>;
 export type RequestSignupFormValues = Omit<SignupFormValues, 'confirmPassword'>;
@@ -37,7 +40,7 @@ export const SignupForm = ({ onSubmit }: Props) => {
   } = useForm<SignupFormValues>({
     defaultValues: {
       username: '',
-      confirmPassword: '',
+      passwordConfirmation: '',
       email: '',
       password: '',
     },
@@ -49,6 +52,7 @@ export const SignupForm = ({ onSubmit }: Props) => {
       email: data.email,
       password: data.password,
       username: data.username,
+      passwordConfirmation: data.passwordConfirmation,
     });
   };
 
@@ -86,10 +90,10 @@ export const SignupForm = ({ onSubmit }: Props) => {
           type={'password'}
         />
         <Input
-          {...register('confirmPassword')}
+          {...register('passwordConfirmation')}
           autoComplete={'off'}
           className={'mb-3 w-full'}
-          error={errors.confirmPassword?.message}
+          error={errors.passwordConfirmation?.message}
           id={'confirm-password'}
           label={'Confirm Password'}
           type={'password'}
