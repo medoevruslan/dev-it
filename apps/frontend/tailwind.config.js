@@ -84,5 +84,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@pyncz/tailwind-mask-image')],
 };

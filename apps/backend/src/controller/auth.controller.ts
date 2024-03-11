@@ -129,8 +129,7 @@ const refreshToken = async (req: Request, res: Response) => {
       maxAge: 1000 * 60 * 60 * 24 * 7,
     }); // 7days
 
-    console.log('return from user controller');
-    return res.status(204).json(user);
+    return res.status(204).json(user.userDto);
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: err.message });

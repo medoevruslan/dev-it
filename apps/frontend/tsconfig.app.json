@@ -10,7 +10,10 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@components": ["./src/componennts"],
+      "@pages": ["./src/pages"],
+      "@assets": ["./src/assets"]
     }
   },
   "exclude": [
