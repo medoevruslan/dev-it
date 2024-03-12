@@ -49,7 +49,7 @@ export const PaginationInteractive: Story = {
 export const PaginationWithPerPageSelect: Story = {
   args: {
     currentPage: 1,
-    totalCount: 55,
+    totalCount: 100,
   },
   render: ({ totalCount }) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -63,10 +63,7 @@ export const PaginationWithPerPageSelect: Story = {
 
     return (
       <div>
-        <Typography
-          style={{ marginBottom: '20px', textAlign: 'center' }}
-          variant={'h4'}
-        >
+        <Typography variant={'h4'} className={'mb-5 text-center'}>
           Total pages count is: {totalCount}
         </Typography>
         <Pagination

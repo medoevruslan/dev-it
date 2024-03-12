@@ -1,11 +1,12 @@
 import { baseApi } from '@/src/services/base-api/base-api';
-import { Article } from '@/src/services/types';
+import { GetArticlesArgs, ResponseArticles } from '@/src/services/types';
 
 export const articlesApi = baseApi.injectEndpoints({
   endpoints: (build) => {
     return {
-      getArticles: build.query<{ data: Article[] }, void>({
-        query: () => ({
+      getArticles: build.query<ResponseArticles, GetArticlesArgs | void>({
+        query: (args) => ({
+          params: args ?? undefined,
           url: 'v1/articles/',
         }),
       }),

@@ -26,14 +26,10 @@ export const Select = ({
   open,
 }: SelectProps) => {
   return (
-    <SelectRadix.Root
-      open={open}
-      disabled={disabled}
-      onValueChange={onValueChange}
-    >
+    <SelectRadix.Root disabled={disabled} onValueChange={onValueChange}>
       <SelectRadix.Trigger
         className={clsx(
-          'min-w-[210px] bg-transparent py-1.5 px-4 flex justify-between items-center border border-solid border-dark-300 rounded-sm focus-visible:outline-[2px] focus-visible:text-info-700 hover:bg-dark-500 [&_svg]:data-[data-state="open"]:text-accent-500 disabled:pointer-events-none disabled:text-dark-300 [&_svg}:disabled:text-dark-300',
+          'min-w-[210px] bg-transparent py-1.5 px-4 flex justify-between items-center border border-solid border-dark-300 rounded-sm focus-visible:outline-none focus-visible:bg-dark-500 hover:bg-dark-500 [&_svg]:data-[data-state="open"]:text-accent-500 disabled:pointer-events-none disabled:text-dark-300 [&_svg}:disabled:text-dark-300',
           className
         )}
         style={style}

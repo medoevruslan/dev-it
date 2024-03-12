@@ -1,9 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import s from '@/components/ui/dropdown/dropdown.module.scss';
-
-import ProfileImage from '../../../assets/Ellipse 1.png';
-import { Dropdown, DropdownItem } from './dropdown';
+import ProfileImage from '@/src/assets/person-outline.svg';
+import { Dropdown, DropdownItem, DropdownItemSeparator } from './dropdown';
 import { Icon } from '../icon';
 import { Profile } from '../../profile';
 
@@ -27,11 +25,11 @@ export const DropdownWithoutIcons: Story = {
         <DropdownItem>
           <a href={'javascript:void;'}>Learn</a>
         </DropdownItem>
-        <div className={s.separator} />
+        <DropdownItemSeparator />
         <DropdownItem>
           <a href={'javascript:void;'}>Edit</a>
         </DropdownItem>
-        <div className={s.separator} />
+        <DropdownItemSeparator />
         <DropdownItem>
           <a href={'javascript:void;'}>Delete</a>
         </DropdownItem>
@@ -50,14 +48,14 @@ export const DropdownWithIcons: Story = {
             Learn
           </a>
         </DropdownItem>
-        <div className={s.separator} />
+        <DropdownItemSeparator />
         <DropdownItem>
           <a href={'javascript:void;'}>
             <Icon height={20} name={'edit'} width={20} />
             Edit
           </a>
         </DropdownItem>
-        <div className={s.separator} />
+        <DropdownItemSeparator />
         <DropdownItem>
           <a href={'javascript:void;'}>
             <Icon height={20} name={'delete'} width={20} />
@@ -97,7 +95,7 @@ export const DropdownWithProfile: Story = {
             Edit
           </a>
         </DropdownItem>
-        <div className={s.separator} />
+        <DropdownItemSeparator />
         <DropdownItem>
           <a href={'javascript:void;'}>
             <Icon height={20} name={'delete'} width={20} />

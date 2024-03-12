@@ -2,13 +2,38 @@ import { Container } from '@/src/components/container/container';
 import { Typography } from '@/src/components/ui/typography';
 import { useGetArticlesQuery } from '@/src/services/articles/articles.service';
 import { TableArticle } from '@/src/components/table-article/table-article';
+import { Pagination, PostsPerPage } from '@/src/components/ui/pagination';
+import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 const postsOnPage = ['10', '20', '30', '50', '100'] as const;
 
-export const MAX_COVER_FILE_SIZE = 5 * 128 * 1024;
-
 export const ArticleList = () => {
-  const { data: articles, isLoading, isError } = useGetArticlesQuery();
+  const [sort, setSortBy] = useState('');
+  const [page, setPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] =
+    useState<(typeof postsOnPage)[number]>('10');
+
+  const {
+    data: articles,
+    isLoading,
+    isError,
+  } = useGetArticlesQuery({
+    currentPage: page,
+    itemsPerPage: Number(postsPerPage),
+    orderBy: sort,
+  });
+
+  const handleChangePostsPerPage = handleChangeWithPageReset(
+    setPage,
+    setPostsPerPage
+  );
+
+  const onChangeSort = (newSort: string) => {
+    setSortBy(newSort);
+    setPage(1);
+    // setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
+  };
 
   if (isLoading) {
     return <Typography variant={'body1'}>Loading...</Typography>;
@@ -17,10 +42,34 @@ export const ArticleList = () => {
   return (
     <Container>
       <Typography variant={'h1'}>Articles page</Typography>
-      <TableArticle articles={articles?.data || []}></TableArticle>
+      <TableArticle
+        onChangeSort={onChangeSort}
+        sort={sort}
+        articles={articles?.items || []}
+      ></TableArticle>
+      <Pagination
+        currentPage={page}
+        onPageChange={setPage}
+        totalCount={articles?.pagination?.totalPages || 10}
+      >
+        <PostsPerPage
+          onChange={handleChangePostsPerPage}
+          options={postsOnPage}
+        />
+      </Pagination>
       {/*<Button onClick={() => parse()} variant={'primary'}>*/}
       {/*  Parse*/}
       {/*</Button>*/}
     </Container>
   );
+};
+
+export const handleChangeWithPageReset = <T,>(
+  pageReset: (page: number) => void,
+  callback: (...args: T[]) => void
+) => {
+  return (...args: T[]) => {
+    pageReset(1);
+    callback(...args);
+  };
 };

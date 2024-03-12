@@ -9,14 +9,24 @@ const articleSchema = zod.object({
   content: zod.string(),
 });
 
+export type GetArticlesArgs = {
+  currentPage?: number;
+  itemsPerPage?: number;
+  orderBy?: string;
+};
+
 const articleService = new ArticleService();
 
-const getArticles = async (req: Request, res: Response) => {
+const getArticles = async (
+  req: Request<object, object, object, GetArticlesArgs>,
+  res: Response
+) => {
   try {
-    const articles = (await articleService.getAll()) || [];
-    res.status(200).json({ data: articles });
+    const { query } = req;
+    const articles = (await articleService.getAll(query)) || [];
+    res.status(200).json(articles);
   } catch (err) {
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error: ' + err.message });
   }
 };
 

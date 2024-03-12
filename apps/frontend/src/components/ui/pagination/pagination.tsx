@@ -6,7 +6,6 @@ import { usePagination } from '@/src/hooks/usePagination';
 import { Typography } from '@/src/components/ui/typography';
 import { Icon } from '../icon';
 import { Select, SelectOption } from '../select';
-import { Link } from 'react-router-dom';
 
 export type PaginationProps = {
   currentPage?: number;
@@ -48,18 +47,18 @@ export const Pagination = ({
 
   const pages = paginationRange.map((el, idx) => {
     return (
-      <Link
+      <a
         className={clsx(
-          'w-6 h-6 bg-transparent rounded-sm cursor-pointer text-center',
-          isActive(el) && 'bg-dark-100',
+          'w-6 h-6 bg-transparent rounded-sm cursor-pointer text-center ',
+          isActive(el) && '!bg-light-100 text-dark-900',
           isDots(el) && 'pointer-events-none'
         )}
-        to={'javascript:void;'}
+        href={'javascript:void;'}
         key={idx}
         onClick={() => handleClick(el)}
       >
-        <Typography variant={'body2'}>{el}</Typography>
-      </Link>
+        <Typography variant={'body1'}>{el}</Typography>
+      </a>
     );
   });
 
@@ -101,10 +100,10 @@ export const PostsPerPage = <T extends string>({
   options,
 }: PostsPerPageProps<T>) => {
   return (
-    <div className={'flex gap-1.5'}>
+    <div className={'flex gap-1.5 items-center'}>
       <Typography variant={'body2'}>Показать</Typography>
       <Select
-        className={'px-1.5 gap-[10px] min-w-0'}
+        className={'px-[6px] gap-[10px] py-0 min-w-fit'}
         onValueChange={onChange}
         placeholder={options[0]}
       >
