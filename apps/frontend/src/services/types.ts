@@ -24,6 +24,7 @@ export type User = {
 };
 
 export type Article = {
+  id: string;
   author: string;
   title: string;
   content: string;

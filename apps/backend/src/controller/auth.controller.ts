@@ -132,23 +132,18 @@ const refreshToken = async (req: Request, res: Response) => {
     return res.status(401).end();
   }
   const { refreshToken: cookieRefreshToken } = req.cookies;
-  try {
-    const user = await userService.refresh(cookieRefreshToken);
+  const user = await userService.refresh(cookieRefreshToken);
 
-    res.cookie('accessToken', user.accessToken, {
-      httpOnly: true,
-      maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
-    }); // 15 minutes
-    res.cookie('refreshToken', user.refreshToken, {
-      httpOnly: true,
-      maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
-    }); // 7days
+  res.cookie('accessToken', user.accessToken, {
+    httpOnly: true,
+    maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
+  }); // 15 minutes
+  res.cookie('refreshToken', user.refreshToken, {
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
+  }); // 7days
 
-    return res.status(204).json(user.userDto);
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ error: err.message });
-  }
+  return res.status(204).json(user.userDto);
 };
 
 export const authController = {

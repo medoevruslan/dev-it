@@ -7,8 +7,9 @@ export class ArticleModel {
       data: article,
     });
   }
-  async delete(title: string) {
-    return this.#storage.delete({ where: { title: title } });
+
+  async update(articleId: string, data: Omit<Partial<Article>, 'id'>) {
+    return await this.#storage.update({ where: { id: articleId }, data });
   }
   async getLimit(currentPage = 1, itemsPerPage = 10, orderBy = '') {
     let skip = 0;
@@ -31,7 +32,15 @@ export class ArticleModel {
     return this.#storage.findMany();
   }
 
+  async getById(id: string) {
+    return this.#storage.findUnique({ where: { id } });
+  }
+
   async getCount() {
     return this.#storage.count();
+  }
+
+  async delete(id: string) {
+    return this.#storage.delete({ where: { id } });
   }
 }

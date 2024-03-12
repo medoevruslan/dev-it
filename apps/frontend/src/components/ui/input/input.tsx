@@ -106,7 +106,7 @@ export const Input = forwardRef<
           <input
             autoComplete={shouldAutocomplete}
             className={clsx(
-              'w-full px-3 py-2 rounded-sm border border-dark-300 bg-transparent outline-none hover:bg-dark-700 disabled:border-dark-500 disabled:text-dark-100',
+              'w-full px-3 py-2 rounded-sm border border-dark-300 bg-transparent focus-visible:border-light-900 outline-none hover:bg-dark-700 disabled:border-dark-500 disabled:text-dark-100',
               error &&
                 'border-danger-300 text-danger-300 placeholder:text-danger-300',
               type === 'search' && 'pl-[40px]'

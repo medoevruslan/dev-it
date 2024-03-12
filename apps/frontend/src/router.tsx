@@ -39,6 +39,10 @@ const privateRoutes = [
     element: <ArticleList />,
     path: '/',
   },
+  {
+    element: <ArticleList />,
+    path: '/edit/:articleId',
+  },
 ];
 
 const signInCheck = {

@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 import zod from 'zod';
 import { parseRSSFeed } from '@/src/utils/rss-parser';
 import { ArticleService } from '@/src/service/article.service';
+import { Article } from '@/prisma/client';
 
-// Sample Zod schema for article validation
 const articleSchema = zod.object({
   title: zod.string(),
   content: zod.string(),
@@ -24,21 +24,55 @@ const getArticles = async (
   try {
     const { query } = req;
     const articles = (await articleService.getAll(query)) || [];
-    res.status(200).json(articles);
+    res.json(articles);
   } catch (err) {
     res.status(500).json({ error: 'Internal server error: ' + err.message });
   }
 };
 
+const getArticleById = async (
+  req: Request<{ articleId: string }>,
+  res: Response
+) => {
+  const id = req.params.articleId;
+  if (!id) {
+    res.sendStatus(404).end();
+  }
+  const article = await articleService.getById(id);
+  res.json(article);
+};
+
+const editArticle = async (
+  req: Request<{ articleId: string }, Omit<Partial<Article>, 'id'>>,
+  res: Response
+) => {
+  const id = req.params.articleId;
+  if (!id) {
+    res.sendStatus(404).end();
+  }
+  const article = await articleService.editArticle(id, req.body);
+  res.json(article);
+};
+
 const createArticle = (req: Request, res: Response) => {
   const newArticle = req.body;
   const article = articleSchema.safeParse(newArticle);
-
   if (article.success === false) {
     return res.status(400).json({ error: article.error.message });
   }
+  res.sendStatus(201).end();
+};
 
-  res.sendStatus(201);
+const deleteArticle = async (
+  req: Request<{ articleId: string }>,
+  res: Response
+) => {
+  const id = req.params.articleId;
+  if (!id) {
+    res.sendStatus(404).end();
+  }
+  await articleService.delete(id);
+  res.sendStatus(204).end();
 };
 
 const parseArticlesFromRSS = async (req: Request, res: Response) => {
@@ -56,5 +90,8 @@ const parseArticlesFromRSS = async (req: Request, res: Response) => {
 export const articleController = {
   getArticles,
   createArticle,
+  deleteArticle,
+  getArticleById,
+  editArticle,
   parseArticlesFromRSS,
 };

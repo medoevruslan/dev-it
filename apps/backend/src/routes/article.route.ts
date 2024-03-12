@@ -9,10 +9,29 @@ articleRouter.get(
   authMiddleware,
   articleController.getArticles
 );
+
+articleRouter.get(
+  '/v1/articles/:articleId',
+  authMiddleware,
+  articleController.getArticleById
+);
+
+articleRouter.patch(
+  '/v1/articles/:articleId',
+  authMiddleware,
+  articleController.editArticle
+);
+
 articleRouter.post(
   '/v1/articles/',
   authMiddleware,
   articleController.createArticle
+);
+
+articleRouter.delete(
+  '/v1/articles/:articleId',
+  authMiddleware,
+  articleController.deleteArticle
 );
 
 articleRouter.post(

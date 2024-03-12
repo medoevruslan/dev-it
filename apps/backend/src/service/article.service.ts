@@ -8,6 +8,14 @@ export class ArticleService {
     return await this.#model.create(article);
   }
 
+  async delete(articleId: string) {
+    return await this.#model.delete(articleId);
+  }
+
+  async editArticle(articleId: string, data: Omit<Partial<Article>, 'id'>) {
+    return await this.#model.update(articleId, data);
+  }
+
   async getAll(query: GetArticlesArgs) {
     const totalItems = await this.#model.getCount();
     const totalPages = Math.ceil(totalItems / query.itemsPerPage);
@@ -31,6 +39,10 @@ export class ArticleService {
         totalPages,
       },
     };
+  }
+
+  async getById(articleId: string) {
+    return await this.#model.getById(articleId);
   }
 
   async deleteToken(title: string) {
