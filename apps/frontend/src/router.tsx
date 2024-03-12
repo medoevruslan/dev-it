@@ -59,7 +59,7 @@ const signInCheck = {
   element: <RedirectToMainWhenUserSignedIn />,
 };
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     children: privateRoutes,
     element: <PrivateRoutes />,

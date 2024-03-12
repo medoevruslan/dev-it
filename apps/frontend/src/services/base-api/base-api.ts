@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { baseQueryWithReauth } from '@/src/services/auth/reauth';
 
 export const baseQuery = fetchBaseQuery({
   baseUrl: 'http://localhost:3000',
@@ -6,7 +7,7 @@ export const baseQuery = fetchBaseQuery({
 });
 
 export const baseApi = createApi({
-  baseQuery: baseQuery,
+  baseQuery: baseQueryWithReauth,
   endpoints: () => ({}),
   reducerPath: 'baseApi',
   tagTypes: ['me', 'GetArticles', 'GetArticle'],

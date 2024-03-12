@@ -5,7 +5,6 @@ import { TokenService } from './token.service';
 import { UserDto } from '../dtos/user-dto';
 import { UserIDJwtPayload } from 'jsonwebtoken';
 import { ApiError } from '@/src/exceptions/api-error';
-
 export type CreateUserModel = Omit<CreateUserType, 'passwordConfirmation'>;
 
 const tokenService = new TokenService();
@@ -14,7 +13,11 @@ export class UserService {
   async signup(candidate: CreateUserModel) {
     const user = await this.#model.getByEmail(candidate.email);
     if (user) {
-      throw new Error('Email is already existing, try another one');
+      throw ApiError.BadRequest('VALIDATION_ERROR', {
+        fieldErrors: {
+          email: ['Email is already taken'],
+        },
+      });
     }
 
     const hashedPassword = await bcrypt.hash(candidate.password, 3);
@@ -41,13 +44,17 @@ export class UserService {
     const user = await this.#model.getByEmail(email);
 
     if (!user) {
-      throw new Error('There is no such user');
+      throw ApiError.NotFound('There is no such user', {});
     }
 
     const isPassEquals = await bcrypt.compare(password, user.password);
 
     if (!isPassEquals) {
-      throw new Error('Wrong password');
+      throw ApiError.BadRequest('VALIDATION_ERROR', {
+        fieldErrors: {
+          password: ['Wrong Password'],
+        },
+      });
     }
 
     const userDto = new UserDto(user);
@@ -69,7 +76,7 @@ export class UserService {
     const tokenFromDb = await tokenService.findToken(token);
 
     if (!userData || !tokenFromDb) {
-      throw new Error('You are not authorized');
+      throw ApiError.UnauthorizedError();
     }
 
     const user = await this.#model.getById(userData.userId);
@@ -99,7 +106,7 @@ export class UserService {
     const user = await this.#model.getById(userData.userId);
 
     if (!user) {
-      throw ApiError.BadRequest('User not found', []);
+      throw ApiError.NotFound('User not found', {});
     }
 
     return new UserDto(user);

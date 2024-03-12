@@ -59,7 +59,6 @@ export class TokenService {
   }
 
   async deleteToken(token: string) {
-    console.log('token service');
     return await this.#model.delete(token);
   }
 }

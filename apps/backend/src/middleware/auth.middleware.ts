@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { TokenService } from '@/src/service/token.service';
+import { ApiError } from '@/src/exceptions/api-error';
 
 const tokenService = new TokenService();
 export const authMiddleware = (
@@ -10,18 +11,18 @@ export const authMiddleware = (
   try {
     const accessToken = req.cookies.accessToken;
     if (!accessToken) {
-      return next(new Error('Not Authorized'));
+      return next(ApiError.UnauthorizedError());
     }
 
     const userData = tokenService.validateAccessToken(accessToken);
 
     if (!userData) {
-      return next(new Error('Not Authorized'));
+      return next(ApiError.UnauthorizedError());
     }
 
     req.user = userData;
     next();
   } catch (err) {
-    return next(new Error('Not Authorized'));
+    next(ApiError.UnauthorizedError());
   }
 };

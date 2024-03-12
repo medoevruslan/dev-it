@@ -22,12 +22,6 @@ articleRouter.patch(
   articleController.editArticle
 );
 
-articleRouter.post(
-  '/v1/articles/',
-  authMiddleware,
-  articleController.createArticle
-);
-
 articleRouter.delete(
   '/v1/articles/:articleId',
   authMiddleware,

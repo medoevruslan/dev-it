@@ -1,4 +1,4 @@
-import type { Request, Response } from 'express';
+import type { NextFunction, Request, Response } from 'express';
 import { z } from 'zod';
 import { UserService } from '../service/user.service';
 import { ApiError } from '@/src/exceptions/api-error';
@@ -29,39 +29,34 @@ export type LoginUserType = z.infer<typeof loginUserSchema>;
 
 const userService = new UserService();
 
-const me = async (req: Request, res: Response) => {
-  if (!req.cookies.accessToken) {
-    return res.status(401).end();
-  }
-  const { accessToken } = req.cookies;
+const me = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const user = await userService.me(accessToken);
+    if (!req.cookies.accessToken) {
+      throw ApiError.UnauthorizedError();
+    }
+    const { accessToken } = req.cookies;
 
+    const user = await userService.me(accessToken);
     return res.status(200).json(user);
   } catch (err) {
-    if (err instanceof ApiError) {
-      return res.status(err.status).json({ message: err.message });
-    } else {
-      return res.status(500).json({ error: err.message });
-    }
+    next(err);
   }
 };
 
 const signup = async (
   req: Request<object, object, CreateUserType>,
-  res: Response
+  res: Response,
+  next: NextFunction
 ) => {
   const { body: candidate } = req;
 
   const userParse = createUserSchema.safeParse(candidate);
 
-  if (userParse.success === false) {
-    // throw ApiError.BadRequest('', userParse.error.)
-    // console.log(userParse.error.errors);
-    return res.status(400).json({ error: userParse.error.flatten() });
-  }
-
   try {
+    if (userParse.success === false) {
+      throw ApiError.BadRequest('VALIDATION_ERROR', userParse.error.flatten());
+    }
+
     const user = await userService.signup({
       username: candidate.username,
       email: candidate.email,
@@ -79,22 +74,23 @@ const signup = async (
 
     res.json(user.userDto);
   } catch (err) {
-    console.log(err);
+    next(err);
   }
 };
 const login = async (
   req: Request<object, object, LoginUserType>,
-  res: Response
+  res: Response,
+  next: NextFunction
 ) => {
   const { body: candidate } = req;
 
   const userParse = loginUserSchema.safeParse(candidate);
 
-  if (userParse.success === false) {
-    return res.status(400).json({ error: userParse.error.flatten() });
-  }
-
   try {
+    if (userParse.success === false) {
+      throw ApiError.BadRequest('VALIDATION_ERROR', userParse.error.flatten());
+    }
+
     const user = await userService.login(candidate.email, candidate.password);
     res.cookie('accessToken', user.accessToken, {
       httpOnly: true,
@@ -107,43 +103,50 @@ const login = async (
 
     res.json({ accessToken: user.accessToken });
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    next(err);
   }
 };
 
-const logout = async (req: Request, res: Response) => {
-  if (!req.cookies.refreshToken) {
-    return res.status(401).end('you are not logged in');
-  }
-  const { refreshToken } = req.cookies;
-  res.clearCookie('refreshToken');
-  res.clearCookie('accessToken');
+const logout = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    if (!req.cookies.refreshToken) {
+      throw ApiError.UnauthorizedError();
+    }
+    const { refreshToken } = req.cookies;
+    res.clearCookie('refreshToken');
+    res.clearCookie('accessToken');
+
     await userService.logout(refreshToken);
     return res.status(204).end();
   } catch (err) {
-    console.log(err);
-    return res.status(404).json({ error: err.message });
+    next(err);
   }
 };
 
-const refreshToken = async (req: Request, res: Response) => {
-  if (!req.cookies.refreshToken) {
-    return res.status(401).end();
+const refreshToken = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    if (!req.cookies.refreshToken) {
+      throw ApiError.UnauthorizedError();
+    }
+    const { refreshToken: cookieRefreshToken } = req.cookies;
+
+    const user = await userService.refresh(cookieRefreshToken);
+    res.cookie('accessToken', user.accessToken, {
+      httpOnly: true,
+      maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
+    }); // 15 minutes
+    res.cookie('refreshToken', user.refreshToken, {
+      httpOnly: true,
+      maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
+    }); // 7days
+    return res.status(204).json(user.userDto);
+  } catch (err) {
+    next(err);
   }
-  const { refreshToken: cookieRefreshToken } = req.cookies;
-  const user = await userService.refresh(cookieRefreshToken);
-
-  res.cookie('accessToken', user.accessToken, {
-    httpOnly: true,
-    maxAge: 1000 * 60 * ACCESS_TOKEN_AGE,
-  }); // 15 minutes
-  res.cookie('refreshToken', user.refreshToken, {
-    httpOnly: true,
-    maxAge: 1000 * 60 * 60 * 24 * REFRESH_TOKEN_AGE,
-  }); // 7days
-
-  return res.status(204).json(user.userDto);
 };
 
 export const authController = {

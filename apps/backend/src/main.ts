@@ -25,11 +25,7 @@ app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(router);
-// app.use(errorMiddleware);
-
-app.get('/', (req: Request, res: Response) => {
-  res.send({ message: 'Hello API' });
-});
+app.use(errorMiddleware);
 
 app.listen(port, host, () => {
   console.log(`[ ready ] http://${host}:${port}`);

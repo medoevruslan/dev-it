@@ -8,11 +8,19 @@ export const errorMiddleware = (
   next: NextFunction
 ) => {
   if (err instanceof ApiError) {
-    return res
-      .status(err.status)
-      .json({ message: err.message, errors: err.errors });
+    res.status(err.status).json({
+      success: false,
+      error: {
+        message: err.message,
+        errors: err.errors,
+      },
+    });
   }
-  return res.status(500).json({
-    message: `Unexpected error: ${(err as { message: string }).message}`,
+  res.status(500).json({
+    success: false,
+    error: {
+      code: 'SERVER_ERROR',
+      message: `Unexpected error: ${(err as { message: string }).message}`,
+    },
   });
 };

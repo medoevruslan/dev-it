@@ -20,7 +20,7 @@ export const Header = ({
   className,
   ...rest
 }: ComponentProps<'header'>) => {
-  const { data: user } = useMeQuery();
+  const { data: user, isError } = useMeQuery();
   const [logout] = useLogoutMutation();
 
   return (
@@ -28,7 +28,7 @@ export const Header = ({
       <Container>
         <div className={'flex items-center justify-between'}>
           <Typography variant={'h2'}>Header Logo</Typography>
-          {user ? (
+          {user && !isError ? (
             <div className={'items-center cursor-pointer flex gap-4'}>
               <Typography
                 className={'border-b border-dashed border-light-100'}
