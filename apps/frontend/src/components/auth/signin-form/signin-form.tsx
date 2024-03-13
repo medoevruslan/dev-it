@@ -9,6 +9,8 @@ import { Input } from '@/src/components/ui/input';
 import { Card } from '@/src/components/ui/card';
 import { Button } from '@/src/components/ui/button';
 import { CheckboxControlled } from '@/src/components/ui/controlled/checkbox-controlled';
+import { useEffect } from 'react';
+import { ApiErrorType } from '@/src/services/types';
 
 const SigninFormSchema = z.object({
   email: z.string().email(),
@@ -20,14 +22,16 @@ export type SigninFormValues = z.infer<typeof SigninFormSchema>;
 
 export type Props = {
   onSubmit: (data: SigninFormValues) => void;
+  apiErrors: ApiErrorType[];
 };
 
-export const SigninForm = ({ onSubmit }: Props) => {
+export const SigninForm = ({ onSubmit, apiErrors }: Props) => {
   const {
     control,
     formState: { errors },
     handleSubmit,
     register,
+    setError,
   } = useForm<SigninFormValues>({
     defaultValues: {
       email: '',
@@ -36,6 +40,15 @@ export const SigninForm = ({ onSubmit }: Props) => {
     },
     resolver: zodResolver(SigninFormSchema),
   });
+
+  useEffect(() => {
+    apiErrors?.forEach((err) => {
+      console.log('set error: ', err.message);
+      setError(err.field as keyof Omit<SigninFormValues, 'rememberMe'>, {
+        message: err.message,
+      });
+    });
+  }, [apiErrors]);
 
   return (
     <form className={'w-[420px] max-w-full'} onSubmit={handleSubmit(onSubmit)}>

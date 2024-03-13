@@ -12,7 +12,7 @@ export const authApi = baseApi.injectEndpoints({
         },
         SigninFormValues
       >({
-        invalidatesTags: ['me'],
+        // invalidatesTags: ['me'],
         query: (body) => ({
           body,
           method: 'POST',
@@ -33,7 +33,7 @@ export const authApi = baseApi.injectEndpoints({
         }),
       }),
       signup: build.mutation<User, Omit<SignupFormValues, 'confirmPassword'>>({
-        invalidatesTags: ['me'],
+        // invalidatesTags: ['me'],
         query: (body) => ({
           body,
           method: 'POST',

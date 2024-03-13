@@ -8,6 +8,9 @@ import { Card } from '@/src/components/ui/card';
 import { Typography } from '@/src/components/ui/typography';
 import { Input } from '@/src/components/ui/input';
 import { Button } from '@/src/components/ui/button';
+import { useEffect } from 'react';
+import { SigninFormValues } from '@/src/components/auth/signin-form';
+import { ApiErrorType } from '@/src/services/types';
 
 const SignupFormSchema = z
   .object({
@@ -18,10 +21,7 @@ const SignupFormSchema = z
   })
   .refine(
     ({ passwordConfirmation, password }) => password === passwordConfirmation,
-    {
-      message: "Passwords don't match",
-      path: ['confirmPassword'],
-    }
+    { message: "Passwords don't match", path: ['passwordConfirmation'] }
   );
 
 export type SignupFormValues = z.infer<typeof SignupFormSchema>;
@@ -29,14 +29,16 @@ export type RequestSignupFormValues = Omit<SignupFormValues, 'confirmPassword'>;
 
 export type Props = {
   onSubmit: (data: RequestSignupFormValues) => void;
+  apiErrors: ApiErrorType[];
 };
 
-export const SignupForm = ({ onSubmit }: Props) => {
+export const SignupForm = ({ onSubmit, apiErrors }: Props) => {
   const {
     control,
     formState: { errors },
     handleSubmit,
     register,
+    setError,
   } = useForm<SignupFormValues>({
     defaultValues: {
       username: '',
@@ -47,20 +49,21 @@ export const SignupForm = ({ onSubmit }: Props) => {
     resolver: zodResolver(SignupFormSchema),
   });
 
-  const handleOnSubmit = (data: SignupFormValues) => {
-    onSubmit({
-      email: data.email,
-      password: data.password,
-      username: data.username,
-      passwordConfirmation: data.passwordConfirmation,
+  useEffect(() => {
+    apiErrors?.forEach((err) => {
+      console.log('set error: ', err.message);
+      setError(
+        err.field as keyof Omit<SigninFormValues, 'rememberMe'>,
+        {
+          message: err.message,
+        },
+        { shouldFocus: true }
+      );
     });
-  };
+  }, [apiErrors]);
 
   return (
-    <form
-      className={'w-[420px] max-w-full'}
-      onSubmit={handleSubmit(handleOnSubmit)}
-    >
+    <form className={'w-[420px] max-w-full'} onSubmit={handleSubmit(onSubmit)}>
       <DevTool control={control} />
       <Card className={'w-[420px] max-w-full'}>
         <header className={'text-center'}>
@@ -93,8 +96,8 @@ export const SignupForm = ({ onSubmit }: Props) => {
           {...register('passwordConfirmation')}
           autoComplete={'off'}
           className={'mb-3 w-full'}
-          error={errors.passwordConfirmation?.message}
-          id={'confirm-password'}
+          error={errors?.passwordConfirmation?.message}
+          id={'passwordConfirmation'}
           label={'Confirm Password'}
           type={'password'}
         />

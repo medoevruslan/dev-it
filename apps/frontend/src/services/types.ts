@@ -31,3 +31,22 @@ export type Article = {
   content: string;
   link: string;
 };
+
+export type ApiErrorType = {
+  field: string;
+  message: string;
+};
+
+export type ErrorDataType = {
+  success: boolean;
+  error: {
+    code: string;
+    message: string;
+    errors: ApiErrorType[];
+  };
+};
+
+export type CustomerError = {
+  data: ErrorDataType;
+  status: number;
+};

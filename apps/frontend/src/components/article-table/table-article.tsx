@@ -97,14 +97,9 @@ export const TableArticle = ({
                 className={'hover:bg-dark-300'}
               >
                 <Table.Cell>
-                  <Link
-                    to={`/article/edit/${article.id}`}
-                    className={'hover:text-accent-500 transition'}
-                  >
-                    <div title={article.title} className={'w-[100px] truncate'}>
-                      {article.title}
-                    </div>
-                  </Link>
+                  <div title={article.title} className={'w-[100px] truncate'}>
+                    {article.title}
+                  </div>
                 </Table.Cell>
                 <Table.Cell>
                   <div className={'w-[200px] truncate'}>{article.content}</div>

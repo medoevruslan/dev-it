@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@backend": ["apps/backend"]
+      "@backend/*": ["apps/backend/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,18 +1,18 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { authApi } from '@/src/services/auth/auth.service';
+import { CustomerError } from '@/src/services/types';
+import { toast } from 'react-toastify';
 
 export const appSlice = createSlice({
   initialState: {},
   name: 'app',
   reducers: {},
   extraReducers: (builder) => {
-    builder.addMatcher(authApi.endpoints.me.matchRejected, (state, action) => {
-      console.log('app slice me matcher rejected');
-    });
     builder.addMatcher(
       (action) => action.type.endsWith('executeQuery/rejected'),
-      (state, action: PayloadAction<{ data: object; status: number }>) => {
-        console.log('app slice other matcher rejected', action.payload.status);
+      (state, action: PayloadAction<CustomerError>) => {
+        const { status, data } = action.payload;
+        status >= 500 && toast.error(data.error.message);
+        status >= 500 && toast.error(data.error.code);
       }
     );
   },

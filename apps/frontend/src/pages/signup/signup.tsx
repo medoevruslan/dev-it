@@ -6,8 +6,11 @@ import {
   SignupForm,
 } from '@/src/components/auth/signup-form';
 import { useSignupMutation } from '@/src/services/auth/auth.service';
+import { ApiErrorType, CustomerError } from '@/src/services/types';
+import { useState } from 'react';
 
 export const Signup = () => {
+  const [errors, setErros] = useState<ApiErrorType[]>([]);
   const [signup] = useSignupMutation();
   const naviagte = useNavigate();
   const handleSignup = async (data: RequestSignupFormValues) => {
@@ -16,29 +19,18 @@ export const Signup = () => {
       toast.success(`user ${resp.email} created`);
       naviagte('/');
     } catch (err) {
-      console.log(err);
+      if ('status' in (err as CustomerError)) {
+        const { errors: errorMessages } = (err as CustomerError).data.error;
+        setErros(errorMessages);
+      }
     }
-    //   if ('status' in (err as CustomerError)) {
-    //     const { errorMessages } = (err as CustomerError).data
-    //
-    //     for (const error of errorMessages) {
-    //       if (error.field && error.message) {
-    //         toast.error(`error: ${error.message} in ${error.field}`)
-    //       } else {
-    //         toast.error(JSON.stringify(error))
-    //       }
-    //     }
-    //   } else {
-    //     console.log(err)
-    //   }
-    // }
   };
 
   return (
     <section
       className={'flex justify-center items-center h-[calc(100vh-61px)]'}
     >
-      <SignupForm onSubmit={handleSignup} />
+      <SignupForm apiErrors={errors} onSubmit={handleSignup} />
     </section>
   );
 };

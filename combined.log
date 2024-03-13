@@ -1205,3 +1205,2549 @@ Argument `where` must not be null.
     at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
     at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
     
+
+    2024-03-13T13:17:58.788Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:17:58.815Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:17:58.865Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:17:58.879Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:09.022Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:09.054Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:16.452Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:18:16.459Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:16.463Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:16.467Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:18:16.470Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:21:54.103Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:21:54.151Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:04.571Z
+    message: There is no such user
+    status: 404
+    stack: Error: There is no such user
+    at Function.NotFound (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3674:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4049:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:22:04.576Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:04.583Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:04.592Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:04.597Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:39.811Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:39.864Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:44.928Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:22:44.933Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:44.939Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:44.949Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:22:44.953Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:04.241Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:04.281Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:08.126Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:23:08.132Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:08.140Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:08.154Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:08.157Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:54.652Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:54.694Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:58.011Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:23:58.016Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:58.024Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:58.028Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:23:58.031Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:33.055Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:33.094Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:38.070Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:27:38.076Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:38.081Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:38.089Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:27:38.096Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:37:46.465Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:37:46.470Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:37:46.474Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:37:46.478Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:37:46.483Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:24.746Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:24.780Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:30.393Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:38:30.402Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:30.413Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:30.425Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:38:30.428Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:39:28.867Z
+    message: There is no such user
+    status: 404
+    stack: Error: There is no such user
+    at Function.NotFound (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3674:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4049:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:39:28.874Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:39:28.878Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:39:28.885Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:39:28.888Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:15.628Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:40:15.648Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:15.660Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:15.692Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:15.704Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:15.706Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:31.245Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:40:31.250Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:31.262Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:31.276Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:31.281Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:57.584Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:40:57.592Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:57.606Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:57.614Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:40:57.618Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:16.834Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:16.902Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:21.483Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:41:21.489Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:21.503Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:21.510Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:41:21.513Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:13.317Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:13.364Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:17.071Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:42:17.076Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:17.084Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:17.090Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:42:17.092Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:10.747Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:10.812Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:14.592Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3932:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at login (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3926:43)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:14.597Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:14.603Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:14.615Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:14.624Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:21.411Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:21.445Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:30.608Z
+    message: There is no such user
+    status: 404
+    stack: Error: There is no such user
+    at Function.NotFound (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3674:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4049:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:45:30.614Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:30.618Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:30.624Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:45:30.636Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:46:08.968Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:46:08.972Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:46:10.176Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:46:10.217Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:46:14.552Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:48:03.683Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:48:03.726Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:48:08.814Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4053:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:49:12.167Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:49:12.214Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:03.773Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:03.777Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:03.808Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:03.830Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:05.074Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:05.110Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:11.707Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:11.756Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:14.442Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:50:14.474Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:52:57.818Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:52:57.821Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:05.309Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:05.311Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:17.517Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:17.568Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:55.584Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:53:55.628Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:54:15.838Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4033:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:56:01.530Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:56:01.565Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:57:43.406Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:57:43.441Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:58:57.794Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:58:57.842Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:59:00.052Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:59:00.094Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T13:59:07.280Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4033:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:59:54.635Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4033:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T13:59:57.436Z
+    message: VALIDATION_ERROR
+    status: 400
+    stack: Error: VALIDATION_ERROR
+    at Function.BadRequest (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3671:16)
+    at UserService.<anonymous> (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:4033:44)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:166:62)
+    
+
+    2024-03-13T14:03:30.713Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:03:30.716Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:04:07.288Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:04:07.333Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:09:02.082Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:09:02.131Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:13:29.739Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:13:29.783Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:14:27.246Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:14:27.284Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:25.834Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:25.855Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:25.870Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:25.884Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:36.532Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:36.560Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:36.597Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:16:36.616Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:17:02.520Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3889:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at me (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3886:40)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
+
+    2024-03-13T14:17:02.553Z
+    message: You are not unauthorized
+    status: 401
+    stack: Error: You are not unauthorized
+    at Function.UnauthorizedError (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3668:16)
+    at /Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3967:40
+    at Generator.next (<anonymous>)
+    at /Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:169:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/tslib@2.6.2/node_modules/tslib/tslib.js:165:16)
+    at refreshToken (/Users/a1/Documents/dev.it/app/dist/apps/backend/main.js:3964:50)
+    at Layer.handle [as handle_request] (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/a1/Documents/dev.it/app/node_modules/.pnpm/express@4.18.3/node_modules/express/lib/router/route.js:119:3)
+    
