@@ -160,7 +160,7 @@ export const ArticleTable = ({
             ))
           ) : (
             <Typography className={'text-center my-5'} variant={'h2'}>
-              Table is empty
+              There is no items
             </Typography>
           )}
         </Table.Body>

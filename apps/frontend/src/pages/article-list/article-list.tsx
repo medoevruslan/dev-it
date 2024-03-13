@@ -63,7 +63,7 @@ export const ArticleList = () => {
     return <Typography variant={'body1'}>Loading...</Typography>;
   }
 
-  if (!articles?.items.length && !isLoading && !isError) {
+  if (!articles?.pagination.totalItems && !isLoading && !isError) {
     return (
       <Container className={'flex flex-col items-center justify-center mt-20'}>
         <Typography className={'text-center mb-6'} variant={'h2'}>
