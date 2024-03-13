@@ -20,8 +20,13 @@ export const Signup = () => {
       naviagte('/');
     } catch (err) {
       if ('status' in (err as CustomerError)) {
-        const { errors: errorMessages } = (err as CustomerError).data.error;
-        setErros(errorMessages);
+        const customerError = (err as CustomerError).data;
+        const { errors: errorMessages } = customerError.error;
+        if (errorMessages.length) {
+          setErros(errorMessages);
+        } else {
+          toast.error(customerError.error.message);
+        }
       }
     }
   };

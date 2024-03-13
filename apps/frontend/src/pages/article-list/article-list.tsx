@@ -1,7 +1,7 @@
 import { Container } from '@/src/components/container/container';
 import { Typography } from '@/src/components/ui/typography';
 import { useGetArticlesQuery } from '@/src/services/articles/articles.service';
-import { TableArticle } from '@/src/components/article-table/table-article';
+import { ArticleTable } from '@/src/components/article-table/article-table';
 import { Pagination, PostsPerPage } from '@/src/components/ui/pagination';
 import { useState } from 'react';
 import { Input } from '@/src/components/ui/input';
@@ -55,12 +55,12 @@ export const ArticleList = () => {
         onChangeText={handleSearchArticles}
         clearInput={() => handleSearchArticles('')}
       />
-      <TableArticle
+      <ArticleTable
         onChangeSort={onChangeSort}
         sort={sort}
         articles={articles?.items || []}
         className={'mb-5'}
-      ></TableArticle>
+      ></ArticleTable>
       <Pagination
         currentPage={page}
         onPageChange={setPage}

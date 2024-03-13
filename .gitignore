@@ -43,5 +43,5 @@ Thumbs.db
 .env*
 !.env.example
 
-
+*.log
 storybook-static

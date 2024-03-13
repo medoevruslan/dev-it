@@ -7,6 +7,7 @@ import {
 import { useLoginMutation } from '@/src/services/auth/auth.service';
 import { ApiErrorType, CustomerError } from '@/src/services/types';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export const Signin = () => {
   const [login] = useLoginMutation();
@@ -20,8 +21,13 @@ export const Signin = () => {
       navigate('/', { replace: true });
     } catch (err) {
       if ('status' in (err as CustomerError)) {
-        const { errors: errorMessages } = (err as CustomerError).data.error;
-        setErros(errorMessages);
+        const customerError = (err as CustomerError).data;
+        const { errors: errorMessages } = customerError.error;
+        if (errorMessages.length) {
+          setErros(errorMessages);
+        } else {
+          toast.error(customerError.error.message);
+        }
       }
     }
   };

@@ -2,6 +2,7 @@ export type ResponseArticles = {
   items: Article[];
   pagination: Pagination;
 };
+
 export type Pagination = {
   currentPage: number;
   itemsPerPage: number;

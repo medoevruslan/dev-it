@@ -22,7 +22,7 @@ type Props = {
   sort: string;
 };
 
-export const TableArticle = ({
+export const ArticleTable = ({
   className,
   articles,
   sort,

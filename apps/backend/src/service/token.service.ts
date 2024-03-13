@@ -2,6 +2,7 @@ import jwt from 'jsonwebtoken';
 import { TokenModel } from '../model/token.model';
 import { UserDto } from '@/src/dtos/user-dto';
 import { ACCESS_TOKEN_AGE, REFRESH_TOKEN_AGE } from '@/src/constants';
+import * as process from 'process';
 
 declare module 'jsonwebtoken' {
   export interface UserIDJwtPayload extends jwt.JwtPayload {
@@ -11,8 +12,8 @@ declare module 'jsonwebtoken' {
   }
 }
 
-const secretKey = 'your-secret-key';
-const refreshTokenSecret = 'your-refresh-secret-key';
+const secretKey = process.env.SECRET_REFRESH_TOKEN;
+const refreshTokenSecret = process.env.SECRET_ACCESS_TOKEN;
 
 export class TokenService {
   private readonly model = new TokenModel();
@@ -42,9 +43,7 @@ export class TokenService {
   }
   validateRefreshToken<T>(token: string): T | null {
     try {
-      const result = jwt.verify(token, refreshTokenSecret) as T;
-      console.log('validateRefreshToken verify:', result);
-      return result;
+      return jwt.verify(token, refreshTokenSecret) as T;
     } catch (err) {
       return null;
     }

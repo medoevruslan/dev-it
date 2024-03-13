@@ -1,1 +1,1 @@
-export * from './table-article';
+export * from './article-table';
