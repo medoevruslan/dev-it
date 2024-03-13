@@ -10,53 +10,83 @@ Enhance your Nx experience by installing [Nx Console](https://nx.dev/nx-console)
 provides an interactive UI to view your projects, run tasks, generate code, and more! Available for VSCode, IntelliJ and
 comes with a LSP for Vim users.
 
-## Start the application
-
-Run `npx nx serve backend` to start the development server. Happy coding!
 
 ## Build for production
 
 Run `npx nx build backend` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
 
-## Running tasks
+## Getting started
 
-To execute tasks with Nx use the following syntax:
+You need to have [Node.js](https://nodejs.org/en/) and [pnpm](https://pnpm.io/) . A simple `pnpm install` in the root directory will install all dependencies.
 
-```
-npx nx <target> <project> <...options>
-```
+Each app can be started with `pnpm dev:<appName>` .This will start the app in development mode.
 
-You can also run multiple targets:
+# @app/source
 
-```
-npx nx run-many -t <target1> <target2>
-```
+This repository contains the source code for the frontend and backend applications of the "@app/source" project.
 
-..or add `-p` to filter specific projects
+## Frontend
 
-```
-npx nx run-many -t <target1> <target2> -p <proj1> <proj2>
-```
+The frontend application is responsible for the user interface and client-side functionality.
 
-Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/features/run-tasks).
+### Technologies Used:
 
-## Set up CI!
+- React
+- React Router
+- Redux Toolkit
+- React Hook Form
+- Tailwind CSS
+- Framer Motion
+- React Toastify
+- Storybook
 
-Nx comes with local caching already built-in (check your `nx.json`). On CI you might want to go a step further.
+### Scripts:
 
-- [Set up remote caching](https://nx.dev/features/share-your-cache)
-- [Set up task distribution across multiple machines](https://nx.dev/nx-cloud/features/distribute-task-execution)
-- [Learn more how to setup CI](https://nx.dev/recipes/ci)
+- `dev:frontend`: Start the development server for the frontend application.
+- `sb`: Run Storybook for component development.
 
-## Explore the project graph
+## Backend
 
-Run `npx nx graph` to show the graph of the workspace.
-It will show tasks that you can run with Nx.
+The backend application provides server-side functionality and interacts with databases.
 
-- [Learn more about Exploring the Project Graph](https://nx.dev/core-features/explore-graph)
+### Technologies Used:
 
-## Connect with us!
+- Node.js
+- Express.js
+- Prisma
+- JWT for authentication
+- Winston for logging
 
-- [Join the community](https://nx.dev/community)
-- [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
-- [Follow us on Twitter](https://twitter.com/nxdevtools)
+### Scripts:
+
+- `dev:backend`: Start the development server for the backend application.
+- `db:generate`: Generate Prisma client.
+- `db:start`: Start the Dockerized database.
+- `db:clear`: Clear the Dockerized database.
+- `db:studio`: Open Prisma Studio.
+- `db:push`: Push database changes to the server.
+
+## Development Tools
+
+This project uses Nx for workspace management, which allows for monorepo-style development. Nx provides various plugins for linting, testing, and building applications.
+
+### Nx Plugins Used:
+
+- Nx ESLint: Linting for JavaScript and TypeScript.
+- Nx Jest: Testing framework.
+- Nx Vite: Build tool for the frontend application.
+- Nx Storybook: Component development environment.
+
+### Additional Dependencies:
+
+- Bcrypt for password hashing.
+- JSON Web Token (JWT) for authentication.
+- Node Schedule for scheduling tasks.
+- RSS Parser for parsing RSS feeds.
+- Zod for schema validation.
+
+## Development Workflow
+
+To start the development servers for both frontend and backend, run the following commands:
+
+- > dev
