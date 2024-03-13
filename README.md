@@ -36,6 +36,7 @@ The frontend application is responsible for the user interface and client-side f
 - Redux Toolkit
 - React Hook Form
 - Tailwind CSS
+- Radix UI
 - Framer Motion
 - React Toastify
 - Storybook
