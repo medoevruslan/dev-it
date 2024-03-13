@@ -102,10 +102,8 @@ export const SignupForm = ({ onSubmit }: Props) => {
           Sign Up
         </Button>
         <footer className={'text-center'}>
-          <Typography variant={'body2'}>
-            <a className={'mb-2'} href={'#'}>
-              Don&apos;t have an account?
-            </a>
+          <Typography className={'mb-2'} variant={'body2'}>
+            Have an account?
           </Typography>
           <Typography variant={'subtitle2'}>
             <a

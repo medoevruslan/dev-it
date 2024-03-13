@@ -1,31 +1,14 @@
 import type { NextFunction, Request, Response } from 'express';
-import { z } from 'zod';
+import { z, ZodError } from 'zod';
 import { UserService } from '../service/user.service';
-import { ApiError } from '@/src/exceptions/api-error';
+import { ApiError, ApiErrorType } from '@/src/exceptions/api-error';
 import { ACCESS_TOKEN_AGE, REFRESH_TOKEN_AGE } from '@/src/constants';
-
-const createUserSchema = z
-  .object({
-    username: z.string({ required_error: 'username is required' }).min(1),
-    email: z.string({ required_error: 'email is required' }).email(),
-    password: z
-      .string({ required_error: 'password is required' })
-      .min(3)
-      .max(10),
-    passwordConfirmation: z.string().min(3),
-  })
-  .refine((data) => data.password === data.passwordConfirmation, {
-    message: 'Passwords do not match',
-    path: ['passwordConfirmation'],
-  });
-
-const loginUserSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(3).max(10),
-});
-
-export type CreateUserType = Required<z.infer<typeof createUserSchema>>;
-export type LoginUserType = z.infer<typeof loginUserSchema>;
+import {
+  createUserSchema,
+  CreateUserType,
+  loginUserSchema,
+  LoginUserType,
+} from '@/src/schema/auth.schema';
 
 const userService = new UserService();
 
@@ -54,7 +37,8 @@ const signup = async (
 
   try {
     if (userParse.success === false) {
-      throw ApiError.BadRequest('VALIDATION_ERROR', userParse.error.flatten());
+      const errors = generateProperError(userParse.error);
+      throw ApiError.BadRequest('VALIDATION_ERROR', errors);
     }
 
     const user = await userService.signup({
@@ -88,7 +72,8 @@ const login = async (
 
   try {
     if (userParse.success === false) {
-      throw ApiError.BadRequest('VALIDATION_ERROR', userParse.error.flatten());
+      const errors = generateProperError(userParse.error);
+      throw ApiError.BadRequest('VALIDATION_ERROR', errors);
     }
 
     const user = await userService.login(candidate.email, candidate.password);
@@ -147,6 +132,22 @@ const refreshToken = async (
   } catch (err) {
     next(err);
   }
+};
+
+export const generateProperError = (errors: ZodError): ApiErrorType[] => {
+  const errorsArray: ApiErrorType[] = [];
+  const { fieldErrors } = errors.flatten();
+  for (const field in fieldErrors) {
+    if (fieldErrors?.[field]) {
+      fieldErrors[field].forEach((err) => {
+        errorsArray.push({
+          field: field,
+          message: err,
+        });
+      });
+    }
+  }
+  return errorsArray;
 };
 
 export const authController = {

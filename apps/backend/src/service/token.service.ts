@@ -15,7 +15,7 @@ const secretKey = 'your-secret-key';
 const refreshTokenSecret = 'your-refresh-secret-key';
 
 export class TokenService {
-  #model = new TokenModel();
+  private readonly model = new TokenModel();
   generateAccessToken(user: UserDto) {
     return jwt.sign(user, secretKey, { expiresIn: `${ACCESS_TOKEN_AGE}m` });
   }
@@ -51,14 +51,14 @@ export class TokenService {
   }
 
   async saveToken(userId: string, refreshToken: string) {
-    return await this.#model.createOrUpdate(userId, refreshToken);
+    return await this.model.createOrUpdate(userId, refreshToken);
   }
 
   async findToken(token: string) {
-    return await this.#model.get(token);
+    return await this.model.get(token);
   }
 
   async deleteToken(token: string) {
-    return await this.#model.delete(token);
+    return await this.model.delete(token);
   }
 }

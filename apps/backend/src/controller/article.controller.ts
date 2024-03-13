@@ -1,14 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
-import zod from 'zod';
 import { parseRSSFeed } from '@/src/utils/rss-parser';
 import { ArticleService } from '@/src/service/article.service';
 import { Article } from '@/prisma/client';
 import { ApiError } from '@/src/exceptions/api-error';
-
-const articleSchema = zod.object({
-  title: zod.string(),
-  content: zod.string(),
-});
 
 export type GetArticlesArgs = {
   currentPage?: number;
@@ -39,7 +33,7 @@ const getArticleById = async (
 ) => {
   const id = req.params.articleId;
   if (!id) {
-    throw ApiError.NotFound('No such article id', {});
+    throw ApiError.NotFound('No such article id', []);
   }
   try {
     const article = await articleService.getById(id);
@@ -56,7 +50,7 @@ const editArticle = async (
 ) => {
   const id = req.params.articleId;
   if (!id) {
-    throw ApiError.NotFound('No such article id', {});
+    throw ApiError.NotFound('No such article id', []);
   }
   try {
     const article = await articleService.editArticle(id, req.body);
@@ -73,7 +67,7 @@ const deleteArticle = async (
 ) => {
   const id = req.params.articleId;
   if (!id) {
-    throw ApiError.NotFound('No such article id', {});
+    throw ApiError.NotFound('No such article id', []);
   }
   try {
     await articleService.delete(id);

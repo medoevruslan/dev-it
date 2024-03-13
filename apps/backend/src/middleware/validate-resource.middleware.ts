@@ -13,6 +13,6 @@ export const validateResourceMiddleware =
       });
       next();
     } catch (err) {
-      throw ApiError.BadRequest('Not valid request', {});
+      next(ApiError.BadRequest('Not valid request', []));
     }
   };

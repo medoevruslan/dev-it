@@ -64,23 +64,12 @@ export const SigninForm = ({ onSubmit }: Props) => {
           label={'Remember me'}
           name={'rememberMe'}
         />
-        <Typography
-          href={'#'}
-          className={
-            'text-end text-light-100 hover:text-accent-500 transition cursor-pointer float-right'
-          }
-          variant={'link2'}
-        >
-          Forgot password?
-        </Typography>
         <Button className={'mt-[60px] mb-[20px]'} fullwidth variant={'primary'}>
           Sign In
         </Button>
         <footer className={'text-center'}>
-          <Typography variant={'body2'}>
-            <a className={'mb-2 hover:text-accent-500 transition'} href={'#'}>
-              Don&apos;t have an account?{' '}
-            </a>
+          <Typography className={'mb-2'} variant={'body2'}>
+            Don&apos;t have an account?{' '}
           </Typography>
           <Typography variant={'subtitle2'}>
             <a

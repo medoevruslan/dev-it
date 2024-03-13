@@ -1,27 +1,29 @@
 import { UserModel } from '../model/user.model';
 import bcrypt from 'bcrypt';
-import { CreateUserType } from '../controller/auth.controller';
 import { TokenService } from './token.service';
 import { UserDto } from '../dtos/user-dto';
 import { UserIDJwtPayload } from 'jsonwebtoken';
 import { ApiError } from '@/src/exceptions/api-error';
+import { CreateUserType } from '@/src/schema/auth.schema';
+
 export type CreateUserModel = Omit<CreateUserType, 'passwordConfirmation'>;
 
 const tokenService = new TokenService();
 export class UserService {
-  #model = new UserModel();
+  private readonly model = new UserModel();
   async signup(candidate: CreateUserModel) {
-    const user = await this.#model.getByEmail(candidate.email);
+    const user = await this.model.getByEmail(candidate.email);
     if (user) {
-      throw ApiError.BadRequest('VALIDATION_ERROR', {
-        fieldErrors: {
-          email: ['Email is already taken'],
+      throw ApiError.BadRequest('VALIDATION_ERROR', [
+        {
+          field: 'email',
+          message: 'Email is already taken',
         },
-      });
+      ]);
     }
 
     const hashedPassword = await bcrypt.hash(candidate.password, 3);
-    const createdUser = await this.#model.create({
+    const createdUser = await this.model.create({
       ...candidate,
       password: hashedPassword,
     });
@@ -41,20 +43,21 @@ export class UserService {
   }
 
   async login(email: string, password: string) {
-    const user = await this.#model.getByEmail(email);
+    const user = await this.model.getByEmail(email);
 
     if (!user) {
-      throw ApiError.NotFound('There is no such user', {});
+      throw ApiError.NotFound('There is no such user', []);
     }
 
     const isPassEquals = await bcrypt.compare(password, user.password);
 
     if (!isPassEquals) {
-      throw ApiError.BadRequest('VALIDATION_ERROR', {
-        fieldErrors: {
-          password: ['Wrong Password'],
+      throw ApiError.BadRequest('VALIDATION_ERROR', [
+        {
+          field: 'password',
+          message: 'Wrong Password',
         },
-      });
+      ]);
     }
 
     const userDto = new UserDto(user);
@@ -79,7 +82,7 @@ export class UserService {
       throw ApiError.UnauthorizedError();
     }
 
-    const user = await this.#model.getById(userData.userId);
+    const user = await this.model.getById(userData.userId);
 
     const userDto = new UserDto(user);
 
@@ -103,10 +106,10 @@ export class UserService {
       throw ApiError.UnauthorizedError();
     }
 
-    const user = await this.#model.getById(userData.userId);
+    const user = await this.model.getById(userData.userId);
 
     if (!user) {
-      throw ApiError.NotFound('User not found', {});
+      throw ApiError.NotFound('User not found', []);
     }
 
     return new UserDto(user);

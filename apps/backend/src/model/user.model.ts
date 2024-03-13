@@ -1,6 +1,6 @@
 import { CreateUserModel } from '../service/user.service';
-import { CreateUserType } from '../controller/auth.controller';
 import { PrismaClient } from '@/prisma/client';
+import { CreateUserType } from '@/src/schema/auth.schema';
 
 export class UserModel {
   #storage = new PrismaClient().user;

@@ -11,6 +11,7 @@ export const errorMiddleware = (
     res.status(err.status).json({
       success: false,
       error: {
+        code: 'API_ERROR',
         message: err.message,
         errors: err.errors,
       },
@@ -20,7 +21,8 @@ export const errorMiddleware = (
     success: false,
     error: {
       code: 'SERVER_ERROR',
-      message: `Unexpected error: ${(err as { message: string }).message}`,
+      message: 'Unexpected error',
+      errors: [],
     },
   });
 };

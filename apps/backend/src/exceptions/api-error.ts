@@ -1,12 +1,13 @@
+export type ApiErrorType = {
+  field: string;
+  message: string;
+};
+
 export class ApiError extends Error {
   status: number;
-  errors: Record<string, unknown>;
+  errors: ApiErrorType[];
 
-  constructor(
-    status: number,
-    message: string,
-    errors: Record<string, unknown> = {}
-  ) {
+  constructor(status: number, message: string, errors: ApiErrorType[] = []) {
     super(message);
     this.errors = errors;
     this.status = status;
@@ -16,11 +17,11 @@ export class ApiError extends Error {
     return new ApiError(401, 'You are not unauthorized');
   }
 
-  static BadRequest(message: string, errors: Record<string, unknown>) {
+  static BadRequest(message: string, errors: ApiErrorType[]) {
     return new ApiError(400, message, errors);
   }
 
-  static NotFound(message: string, errors: Record<string, unknown>) {
+  static NotFound(message: string, errors: ApiErrorType[]) {
     return new ApiError(404, message, errors);
   }
 }
