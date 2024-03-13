@@ -1,11 +1,16 @@
 import { Container } from '@/src/components/container/container';
 import { Typography } from '@/src/components/ui/typography';
-import { useGetArticlesQuery } from '@/src/services/articles/articles.service';
+import {
+  useGetArticlesQuery,
+  useParseMutation,
+} from '@/src/services/articles/articles.service';
 import { ArticleTable } from '@/src/components/article-table/article-table';
 import { Pagination, PostsPerPage } from '@/src/components/ui/pagination';
 import { useState } from 'react';
 import { Input } from '@/src/components/ui/input';
 import { useDebounce } from 'use-debounce';
+import { Button } from '@/src/components/ui/button';
+import { toast } from 'react-toastify';
 
 const postsOnPage = ['10', '20', '30', '50', '100'] as const;
 
@@ -16,12 +21,19 @@ export const ArticleList = () => {
   const [postsPerPage, setPostsPerPage] =
     useState<(typeof postsOnPage)[number]>('10');
 
-  const { data: articles, isLoading } = useGetArticlesQuery({
+  const {
+    data: articles,
+    isLoading,
+    isError,
+    isFetching,
+  } = useGetArticlesQuery({
     name: useDebounce(searchArticles, 700)[0],
     currentPage: page,
     itemsPerPage: Number(postsPerPage),
     orderBy: sort,
   });
+
+  const [parseArticles] = useParseMutation();
 
   const handleChangePostsPerPage = handleChangeWithPageReset(
     setPage,
@@ -33,6 +45,15 @@ export const ArticleList = () => {
     setSearchArticles
   );
 
+  const handleParseArticles = async () => {
+    try {
+      const response = await parseArticles().unwrap();
+      toast.success(response.message);
+    } catch (err: any) {
+      toast.error(err.message);
+    }
+  };
+
   const onChangeSort = (newSort: string) => {
     setSortBy(newSort);
     setPage(1);
@@ -40,6 +61,23 @@ export const ArticleList = () => {
 
   if (isLoading) {
     return <Typography variant={'body1'}>Loading...</Typography>;
+  }
+
+  if (!articles?.items.length && !isLoading && !isError) {
+    return (
+      <Container className={'flex flex-col items-center justify-center mt-20'}>
+        <Typography className={'text-center mb-6'} variant={'h2'}>
+          There is no items in the table
+        </Typography>
+        <Button
+          onClick={handleParseArticles}
+          disabled={isFetching || isLoading}
+          variant={'primary'}
+        >
+          Parse Articles
+        </Button>
+      </Container>
+    );
   }
 
   return (

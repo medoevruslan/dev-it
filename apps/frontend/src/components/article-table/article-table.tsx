@@ -6,7 +6,7 @@ import { Article } from '@/src/services/types';
 import { Icon } from '../ui/icon';
 import { Sort } from '@/src/components/ui/sort';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   useDeleteArticleMutation,
   useEditArticleMutation,
@@ -14,6 +14,7 @@ import {
 import { ArticleModal } from '@/src/components/article-modal';
 import { useMeQuery } from '@/src/services/auth/auth.service';
 import { EditArticleFormValues } from '@/src/schema/article.schema';
+import { ConfirmModal } from '@/src/components/confirm-modal';
 
 type Props = {
   className?: string;
@@ -30,20 +31,29 @@ export const ArticleTable = ({
 }: Props) => {
   const params = useParams<{ articleId: string }>();
   const navigate = useNavigate();
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const { data: user, isError } = useMeQuery();
 
   const [isOpenModal, setIsOpenModal] = useState(!!params?.articleId);
   const [deleteArticle] = useDeleteArticleMutation();
 
-  const [updateArticle] = useEditArticleMutation();
+  const [updateArticle, { isLoading: isUpdating }] = useEditArticleMutation();
 
   useEffect(() => {
     setIsOpenModal(!!params?.articleId);
   }, [params?.articleId]);
 
-  const handleDelete = async (articleId: string) => {
-    await deleteArticle({ articleId });
+  const articleIdRef = useRef<string>('');
+  const handleConfirmDeleteArticle = (id: string) => {
+    articleIdRef.current = id;
+    setShowConfirm(true);
+  };
+
+  const handleDeleteArticle = async () => {
+    await deleteArticle({ articleId: articleIdRef.current });
+    articleIdRef.current = '';
+    setShowConfirm(false);
   };
   const handleCloseModal = (value: boolean) => {
     setIsOpenModal(value);
@@ -90,11 +100,11 @@ export const ArticleTable = ({
           </Table.Row>
         </Table.Head>
         <Table.Body>
-          {articles?.length &&
+          {articles?.length ? (
             articles.map((article) => (
               <Table.Row
                 key={article.link + article.title}
-                className={'hover:bg-dark-300'}
+                className={clsx('hover:bg-dark-300')}
               >
                 <Table.Cell>
                   <div title={article.title} className={'w-[100px] truncate'}>
@@ -140,16 +150,26 @@ export const ArticleTable = ({
                         }
                         height={15}
                         name={'delete'}
-                        onClick={() => handleDelete(article.id)}
+                        onClick={() => handleConfirmDeleteArticle(article.id)}
                         width={15}
                       />
                     </div>
                   </Table.Cell>
                 )}
               </Table.Row>
-            ))}
+            ))
+          ) : (
+            <Typography className={'text-center my-5'} variant={'h2'}>
+              Table is empty
+            </Typography>
+          )}
         </Table.Body>
       </Table.Root>
+      <ConfirmModal
+        closeModal={() => setShowConfirm(false)}
+        isOpen={showConfirm}
+        handleDeleteCard={handleDeleteArticle}
+      />
       <ArticleModal
         articleId={params.articleId}
         isOpen={isOpenModal}

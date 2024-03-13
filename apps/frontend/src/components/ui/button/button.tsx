@@ -9,6 +9,7 @@ export type ButtonProps<T extends ElementType = 'button'> = {
   className?: string;
   fullwidth?: boolean;
   variant: 'outlined' | 'primary' | 'secondary';
+  disabled: boolean;
 } & ComponentPropsWithoutRef<T>;
 
 const variantClassMap = {
@@ -27,6 +28,7 @@ export const Button = <T extends ElementType = 'button'>(
     children,
     className = '',
     fullwidth,
+    disabled,
     variant = 'primary',
     ...rest
   } = props;
@@ -38,6 +40,7 @@ export const Button = <T extends ElementType = 'button'>(
         variantClassMap[variant],
         Component === 'a' && 'inline-block',
         fullwidth && 'w-full text-center block',
+        disabled && 'pointer-events-none bg-dark-100',
         className
       )}
       {...rest}

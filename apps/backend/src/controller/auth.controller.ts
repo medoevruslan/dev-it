@@ -20,7 +20,7 @@ const me = async (req: Request, res: Response, next: NextFunction) => {
     const { accessToken } = req.cookies;
 
     const user = await userService.me(accessToken);
-    return res.status(200).json(user);
+    return res.json(user);
   } catch (err) {
     next(err);
   }

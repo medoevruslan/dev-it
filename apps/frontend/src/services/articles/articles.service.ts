@@ -32,11 +32,12 @@ export const articlesApi = baseApi.injectEndpoints({
         }),
         invalidatesTags: ['GetArticles'],
       }),
-      parse: build.mutation<void, void>({
+      parse: build.mutation<{ message: string }, void>({
         query: () => ({
           url: 'v1/articles/parse',
           method: 'POST',
         }),
+        invalidatesTags: ['GetArticles'],
       }),
       deleteArticle: build.mutation<void, { articleId: string }>({
         query: ({ articleId }) => ({

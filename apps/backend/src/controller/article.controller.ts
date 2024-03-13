@@ -3,6 +3,7 @@ import { parseRSSFeed } from '@/src/utils/rss-parser';
 import { ArticleService } from '@/src/service/article.service';
 import { Article } from '@/prisma/client';
 import { ApiError } from '@/src/exceptions/api-error';
+import { startCrone } from '@/src/cron';
 
 export type GetArticlesArgs = {
   name?: string;
@@ -84,10 +85,17 @@ export const parseArticlesFromRSS = async (
   next: NextFunction
 ) => {
   const rssFeedUrl = 'https://feeds.simplecast.com/54nAGcIl'; // Replace with your chosen RSS feed URL
+  const articleCount = await articleService.getArticleCount();
+
+  if (articleCount > 100) return;
+
+  if (articleCount === 0) {
+    startCrone();
+  }
 
   try {
     await parseRSSFeed(rssFeedUrl);
-    res.json({ message: 'Articles parsed successfully' });
+    res.json({ message: 'Articles parsed successfully, cron started daily' });
   } catch (err) {
     next(new Error(`Error parsing articles from RSS feed: ${err.message}`));
   }

@@ -30,7 +30,7 @@ model Token {
 model Article {
   id      String @id @default(cuid())
   author  String
-  title   String @unique
+  title   String
   content String
   link    String
 }

@@ -13,8 +13,6 @@ const app = express();
 const port = Number(process.env.PORT) || 3000;
 const host = process.env.HOST || 'localhost';
 
-startCrone();
-
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());

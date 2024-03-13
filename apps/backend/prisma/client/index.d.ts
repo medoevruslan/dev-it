@@ -4067,14 +4067,14 @@ export namespace Prisma {
 
   export type ArticleWhereUniqueInput = Prisma.AtLeast<{
     id?: string
-    title?: string
     AND?: ArticleWhereInput | ArticleWhereInput[]
     OR?: ArticleWhereInput[]
     NOT?: ArticleWhereInput | ArticleWhereInput[]
     author?: StringFilter<"Article"> | string
+    title?: StringFilter<"Article"> | string
     content?: StringFilter<"Article"> | string
     link?: StringFilter<"Article"> | string
-  }, "id" | "title">
+  }, "id">
 
   export type ArticleOrderByWithAggregationInput = {
     id?: SortOrder

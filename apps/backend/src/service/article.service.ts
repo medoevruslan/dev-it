@@ -42,11 +42,11 @@ export class ArticleService {
     };
   }
 
-  async getById(articleId: string) {
-    return await this.model.getById(articleId);
+  async getArticleCount() {
+    return this.model.getCount();
   }
 
-  async deleteToken(title: string) {
-    return await this.model.delete(title);
+  async getById(articleId: string) {
+    return this.model.getById(articleId);
   }
 }

@@ -1,5 +1,6 @@
 import Parser from 'rss-parser';
-import { PrismaClient } from '@/prisma/client';
+import { Prisma, PrismaClient } from '@/prisma/client';
+import ArticleCreateManyInput = Prisma.ArticleCreateManyInput;
 
 const prisma = new PrismaClient();
 const parser = new Parser();
@@ -10,27 +11,18 @@ export const parseRSSFeed = async (feedUrl: string) => {
 
     const articles = await Promise.all(
       feed.items.map(async (item) => {
-        const existingArticle = await prisma.article.findFirst({
-          where: { link: item.link },
+        return prisma.article.create({
+          data: {
+            title: item.title,
+            content: item.content || item.contentSnippet || '',
+            link: item.link,
+            author: item.creator || 'unknown',
+          },
         });
-
-        if (!existingArticle) {
-          return prisma.article.create({
-            data: {
-              title: item.title,
-              content: item.content || item.contentSnippet || '',
-              link: item.link,
-              author: item.creator || 'unknown',
-              // Add more fields as needed
-            },
-          });
-        }
-
-        return null;
       })
     );
 
-    return articles.filter(Boolean);
+    return articles;
   } catch (error) {
     console.error('Error parsing RSS feed:', error);
     throw error;
