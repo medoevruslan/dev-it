@@ -5,12 +5,13 @@ import { UserDto } from '../dtos/user-dto';
 import { UserIDJwtPayload } from 'jsonwebtoken';
 import { ApiError } from '@/src/exceptions/api-error';
 import { CreateUserType } from '@/src/schema/auth.schema';
+import { User } from '@/prisma/client';
 
 export type CreateUserModel = Omit<CreateUserType, 'passwordConfirmation'>;
 
-const tokenService = new TokenService();
 export class UserService {
   private readonly model = new UserModel();
+  private readonly tokenService = new TokenService();
   async signup(candidate: CreateUserModel) {
     const user = await this.model.getByEmail(candidate.email);
     if (user) {
@@ -28,18 +29,7 @@ export class UserService {
       password: hashedPassword,
     });
 
-    const userDto = new UserDto(createdUser);
-
-    const { accessToken, refreshToken } = tokenService.generateTokens({
-      ...userDto,
-    });
-    await tokenService.saveToken(createdUser.id, refreshToken);
-
-    return {
-      userDto,
-      accessToken,
-      refreshToken,
-    };
+    return await this.generateAndSaveToken(createdUser);
   }
 
   async login(email: string, password: string) {
@@ -60,23 +50,13 @@ export class UserService {
       ]);
     }
 
-    const userDto = new UserDto(user);
-
-    const { accessToken, refreshToken } = tokenService.generateTokens({
-      ...userDto,
-    });
-    await tokenService.saveToken(user.id, refreshToken);
-
-    return {
-      userDto,
-      accessToken,
-      refreshToken,
-    };
+    return await this.generateAndSaveToken(user);
   }
 
   async refresh(token: string) {
-    const userData = tokenService.validateRefreshToken<UserIDJwtPayload>(token);
-    const tokenFromDb = await tokenService.findToken(token);
+    const userData =
+      this.tokenService.validateRefreshToken<UserIDJwtPayload>(token);
+    const tokenFromDb = await this.tokenService.findToken(token);
 
     if (!userData || !tokenFromDb) {
       throw ApiError.UnauthorizedError();
@@ -84,23 +64,12 @@ export class UserService {
 
     const user = await this.model.getById(userData.userId);
 
-    const userDto = new UserDto(user);
-
-    const { accessToken, refreshToken } = tokenService.generateTokens({
-      ...userDto,
-    });
-
-    await tokenService.saveToken(user.id, refreshToken);
-
-    return {
-      accessToken,
-      refreshToken,
-      userDto,
-    };
+    return await this.generateAndSaveToken(user);
   }
 
   async me(token: string) {
-    const userData = tokenService.validateAccessToken<UserIDJwtPayload>(token);
+    const userData =
+      this.tokenService.validateAccessToken<UserIDJwtPayload>(token);
 
     if (!userData) {
       throw ApiError.UnauthorizedError();
@@ -116,6 +85,22 @@ export class UserService {
   }
 
   async logout(token: string) {
-    return await tokenService.deleteToken(token);
+    return await this.tokenService.deleteToken(token);
+  }
+
+  async generateAndSaveToken(user: User) {
+    const userDto = new UserDto(user);
+
+    const { accessToken, refreshToken } = this.tokenService.generateTokens({
+      ...userDto,
+    });
+
+    await this.tokenService.saveToken(user.id, refreshToken);
+
+    return {
+      accessToken,
+      refreshToken,
+      userDto,
+    };
   }
 }

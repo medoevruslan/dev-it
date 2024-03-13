@@ -1,9 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-// import { useSignupMutation } from '@/services/auth/auth.service'
-// import { CustomerError } from '@/services/definitions'
-
 import {
   RequestSignupFormValues,
   SignupForm,
@@ -16,7 +13,6 @@ export const Signup = () => {
   const handleSignup = async (data: RequestSignupFormValues) => {
     try {
       const resp = await signup(data).unwrap();
-
       toast.success(`user ${resp.email} created`);
       naviagte('/');
     } catch (err) {

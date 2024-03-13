@@ -29,8 +29,6 @@ export class ArticleModel {
       };
     }
 
-    console.log('serch for: ', name);
-
     return this.storage.findMany({
       skip,
       take: itemsPerPage,

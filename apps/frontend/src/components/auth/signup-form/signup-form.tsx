@@ -110,7 +110,7 @@ export const SignupForm = ({ onSubmit }: Props) => {
               className={
                 'text-accent-500 underline transition hover:text-light-100'
               }
-              href={'#'}
+              href={'/login'}
             >
               Sign In
             </a>
