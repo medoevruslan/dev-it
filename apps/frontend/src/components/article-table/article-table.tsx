@@ -20,6 +20,7 @@ type Props = {
   className?: string;
   articles: Article[];
   onChangeSort: (value: string) => void;
+  isLoading?: boolean;
   sort: string;
 };
 
@@ -32,13 +33,14 @@ export const ArticleTable = ({
   const params = useParams<{ articleId: string }>();
   const navigate = useNavigate();
   const [showConfirm, setShowConfirm] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(!!params?.articleId);
 
   const { data: user, isError } = useMeQuery();
 
-  const [isOpenModal, setIsOpenModal] = useState(!!params?.articleId);
   const [deleteArticle] = useDeleteArticleMutation();
 
-  const [updateArticle, { isLoading: isUpdating }] = useEditArticleMutation();
+  const [updateArticle] = useEditArticleMutation();
+  const articleToUpdate = articles.find((a) => a.id === params?.articleId);
 
   useEffect(() => {
     setIsOpenModal(!!params?.articleId);
@@ -145,9 +147,9 @@ export const ArticleTable = ({
                         />
                       </Link>
                       <Icon
-                        className={
+                        className={clsx(
                           'cursor-pointer transition hover:text-accent-500'
-                        }
+                        )}
                         height={15}
                         name={'delete'}
                         onClick={() => handleConfirmDeleteArticle(article.id)}
@@ -171,10 +173,10 @@ export const ArticleTable = ({
         handleDeleteCard={handleDeleteArticle}
       />
       <ArticleModal
-        articleId={params.articleId}
         isOpen={isOpenModal}
         onSubmit={handleSubmit}
         setIsOpen={handleCloseModal}
+        article={articleToUpdate}
       />
     </>
   );

@@ -6,28 +6,23 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Modal } from '@/src/components/ui/modal';
 import { Input } from '@/src/components/ui/input';
 import { Button } from '@/src/components/ui/button';
-import { useGetArticleByIdQuery } from '@/src/services/articles/articles.service';
-import { useEffect } from 'react';
 import {
   EditArticleFormValues,
   editArticleSchema,
 } from '@/src/schema/article.schema';
+import { Article } from '@/src/services/types';
 
 export const ArticleModal = ({
   isOpen,
   onSubmit,
   setIsOpen,
-  articleId = '',
+  article,
 }: {
   isOpen: boolean;
   onSubmit: (articleId: string, data: EditArticleFormValues) => void;
   setIsOpen: (value: boolean) => void;
-  articleId?: string;
+  article?: Article;
 }) => {
-  const { data: article } = useGetArticleByIdQuery(
-    { articleId },
-    { skip: !articleId }
-  );
   const closeModal = () => {
     setIsOpen(false);
     reset();
@@ -39,7 +34,6 @@ export const ArticleModal = ({
     handleSubmit,
     register,
     reset,
-    setValue,
   } = useForm<EditArticleFormValues>({
     defaultValues: {
       title: article?.title || '',
@@ -47,14 +41,9 @@ export const ArticleModal = ({
     resolver: zodResolver(editArticleSchema),
   });
   const onFormSubmit = (data: EditArticleFormValues) => {
-    onSubmit(articleId, data);
+    onSubmit(article?.id || '', data);
     closeModal();
   };
-
-  useEffect(() => {
-    if (!article) return;
-    setValue('title', article?.title);
-  }, [article]);
 
   return (
     <Modal onClose={closeModal} open={isOpen} title={'Edit Article'}>

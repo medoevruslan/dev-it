@@ -9,7 +9,7 @@ export type ButtonProps<T extends ElementType = 'button'> = {
   className?: string;
   fullwidth?: boolean;
   variant: 'outlined' | 'primary' | 'secondary';
-  disabled: boolean;
+  disabled?: boolean;
 } & ComponentPropsWithoutRef<T>;
 
 const variantClassMap = {

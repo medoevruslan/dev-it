@@ -96,6 +96,7 @@ export const ArticleList = () => {
       <ArticleTable
         onChangeSort={onChangeSort}
         sort={sort}
+        isLoading={isLoading || isFetching}
         articles={articles?.items || []}
         className={'mb-5'}
       ></ArticleTable>
