@@ -36,6 +36,7 @@ export const Button = <T extends ElementType = 'button'>(
       className={clsx(
         'cursor-pointer px-7 py-1 rounded-sm focus-visible:outline-[1px] focus-visible:outline-info-700',
         variantClassMap[variant],
+        Component === 'a' && 'inline-block',
         fullwidth && 'w-full text-center block',
         className
       )}

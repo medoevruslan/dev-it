@@ -1,5 +1,5 @@
 import type { NextFunction, Request, Response } from 'express';
-import { z, ZodError } from 'zod';
+import { ZodError } from 'zod';
 import { UserService } from '../service/user.service';
 import { ApiError, ApiErrorType } from '@/src/exceptions/api-error';
 import { ACCESS_TOKEN_AGE, REFRESH_TOKEN_AGE } from '@/src/constants';

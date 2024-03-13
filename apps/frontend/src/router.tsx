@@ -32,13 +32,13 @@ const RedirectToMainWhenUserSignedIn = () => {
   return shouldNavigateToMain ? <Navigate to={'/'} /> : <Outlet />;
 };
 
-//@ts-ignore
-const publicRoutes = [];
-const privateRoutes = [
+const publicRoutes = [
   {
     element: <ArticleList />,
     path: '/',
   },
+];
+const privateRoutes = [
   {
     element: <ArticleList />,
     path: '/edit/:articleId',
@@ -65,7 +65,6 @@ export const router = createBrowserRouter([
     element: <PrivateRoutes />,
   },
   signInCheck,
-  //@ts-ignore
   ...publicRoutes,
 ]);
 

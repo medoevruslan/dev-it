@@ -6,11 +6,14 @@ import cors from 'cors';
 import { loggerMiddleware } from '@/src/middleware/logger.middleware';
 import * as process from 'process';
 import { corsOptions } from '@/src/express.config';
+import { startCrone } from '@/src/cron';
 
 const app = express();
 
 const port = Number(process.env.PORT) || 3000;
 const host = process.env.HOST || 'localhost';
+
+startCrone();
 
 app.use(express.json());
 app.use(cors(corsOptions));

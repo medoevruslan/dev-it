@@ -2,19 +2,16 @@ import { useForm } from 'react-hook-form';
 
 import { DevTool } from '@hookform/devtools';
 import { zodResolver } from '@hookform/resolvers/zod';
-import z from 'zod';
 
 import { Modal } from '@/src/components/ui/modal';
 import { Input } from '@/src/components/ui/input';
 import { Button } from '@/src/components/ui/button';
 import { useGetArticleByIdQuery } from '@/src/services/articles/articles.service';
 import { useEffect } from 'react';
-
-const editArticleSchema = z.object({
-  title: z.string().trim().min(1),
-});
-
-export type EditArticleFormValues = z.infer<typeof editArticleSchema>;
+import {
+  EditArticleFormValues,
+  editArticleSchema,
+} from '@/src/schema/article.schema';
 
 export const ArticleModal = ({
   isOpen,
@@ -38,7 +35,7 @@ export const ArticleModal = ({
 
   const {
     control,
-    formState: { errors, defaultValues },
+    formState: { errors },
     handleSubmit,
     register,
     reset,

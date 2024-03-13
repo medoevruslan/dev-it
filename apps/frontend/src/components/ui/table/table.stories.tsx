@@ -55,14 +55,6 @@ export const TableDefault: Story = {
                   'cursor-pointer inline-block transition hover:text-accent-500 mr-[10px]'
                 }
                 height={15}
-                name={'play-circle-icon'}
-                width={15}
-              />
-              <Icon
-                className={
-                  'cursor-pointer inline-block transition hover:text-accent-500 mr-[10px]'
-                }
-                height={15}
                 name={'edit'}
                 width={15}
               />

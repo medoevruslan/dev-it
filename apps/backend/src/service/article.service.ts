@@ -3,21 +3,21 @@ import { Article } from '@/prisma/client';
 import { GetArticlesArgs } from '@/src/controller/article.controller';
 
 export class ArticleService {
-  #model = new ArticleModel();
+  private readonly model = new ArticleModel();
   async create(article: Omit<Article, 'id'>) {
-    return await this.#model.create(article);
+    return await this.model.create(article);
   }
 
   async delete(articleId: string) {
-    return await this.#model.delete(articleId);
+    return await this.model.delete(articleId);
   }
 
   async editArticle(articleId: string, data: Omit<Partial<Article>, 'id'>) {
-    return await this.#model.update(articleId, data);
+    return await this.model.update(articleId, data);
   }
 
   async getAll(query: GetArticlesArgs) {
-    const totalItems = await this.#model.getCount();
+    const totalItems = await this.model.getCount();
     const totalPages = Math.ceil(totalItems / query.itemsPerPage);
     const currentPage = query?.currentPage
       ? Number(query?.currentPage)
@@ -25,10 +25,11 @@ export class ArticleService {
     const itemsPerPage = query?.itemsPerPage
       ? Number(query?.itemsPerPage)
       : undefined;
-    const result = await this.#model.getLimit(
+    const result = await this.model.getLimit(
       currentPage,
       itemsPerPage,
-      query.orderBy
+      query.orderBy,
+      query.name
     );
     return {
       items: result,
@@ -42,10 +43,10 @@ export class ArticleService {
   }
 
   async getById(articleId: string) {
-    return await this.#model.getById(articleId);
+    return await this.model.getById(articleId);
   }
 
   async deleteToken(title: string) {
-    return await this.#model.delete(title);
+    return await this.model.delete(title);
   }
 }

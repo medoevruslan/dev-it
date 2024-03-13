@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
-import winston from 'winston';
+import winston, { format } from 'winston';
 
 const logger = winston.createLogger({
   level: 'info',
-  format: winston.format.json(),
+  format: format.printf((info) => info.message),
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({ filename: 'error.log', level: 'error' }),
@@ -17,10 +17,13 @@ export const loggerMiddleware = (
   res: Response,
   next: NextFunction
 ) => {
-  const time = new Date().toLocaleDateString();
-  logger.error(
-    `${time}---message: ${err.message}\nstatus: ${err.status}\nstack: ${err.stack}`
-  );
+  const time = new Date().toISOString();
+  logger.error(`
+    ${time}
+    message: ${err.message}
+    status: ${err.status}
+    stack: ${err.stack}
+    `);
 
   next(err);
 };

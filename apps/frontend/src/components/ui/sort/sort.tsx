@@ -1,13 +1,16 @@
 import React from 'react';
 import { Icon } from '../icon';
+import { Article } from '@/src/services/types';
 
 const downIcon = <Icon name={'chevron-down'} width={15} height={5} />;
 const upIcon = <Icon name={'chevron-up'} width={15} height={5} />;
 const noneIcon = <Icon name={'sort-default'} width={10} height={10} />;
 
+type SortValue = keyof Omit<Article, 'id'>;
+
 export type SortProps = {
   sort: string;
-  value: string;
+  value: SortValue;
   onChange: (newSort: string) => void;
 };
 

@@ -4,16 +4,20 @@ import { useGetArticlesQuery } from '@/src/services/articles/articles.service';
 import { TableArticle } from '@/src/components/article-table/table-article';
 import { Pagination, PostsPerPage } from '@/src/components/ui/pagination';
 import { useState } from 'react';
+import { Input } from '@/src/components/ui/input';
+import { useDebounce } from 'use-debounce';
 
 const postsOnPage = ['10', '20', '30', '50', '100'] as const;
 
 export const ArticleList = () => {
+  const [searchArticles, setSearchArticles] = useState('');
   const [sort, setSortBy] = useState('');
   const [page, setPage] = useState(1);
   const [postsPerPage, setPostsPerPage] =
     useState<(typeof postsOnPage)[number]>('10');
 
   const { data: articles, isLoading } = useGetArticlesQuery({
+    name: useDebounce(searchArticles, 700)[0],
     currentPage: page,
     itemsPerPage: Number(postsPerPage),
     orderBy: sort,
@@ -24,10 +28,14 @@ export const ArticleList = () => {
     setPostsPerPage
   );
 
+  const handleSearchArticles = handleChangeWithPageReset(
+    setPage,
+    setSearchArticles
+  );
+
   const onChangeSort = (newSort: string) => {
     setSortBy(newSort);
     setPage(1);
-    // setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
   };
 
   if (isLoading) {
@@ -36,11 +44,22 @@ export const ArticleList = () => {
 
   return (
     <Container>
-      <Typography variant={'h1'}>Articles page</Typography>
+      <Typography className={'my-8'} variant={'h1'}>
+        Articles page
+      </Typography>
+      <Input
+        type={'search'}
+        className={'mb-5'}
+        label={'Search article'}
+        value={searchArticles}
+        onChangeText={handleSearchArticles}
+        clearInput={() => handleSearchArticles('')}
+      />
       <TableArticle
         onChangeSort={onChangeSort}
         sort={sort}
         articles={articles?.items || []}
+        className={'mb-5'}
       ></TableArticle>
       <Pagination
         currentPage={page}
@@ -52,9 +71,6 @@ export const ArticleList = () => {
           options={postsOnPage}
         />
       </Pagination>
-      {/*<Button onClick={() => parse()} variant={'primary'}>*/}
-      {/*  Parse*/}
-      {/*</Button>*/}
     </Container>
   );
 };

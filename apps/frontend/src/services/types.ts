@@ -10,6 +10,7 @@ export type Pagination = {
 };
 
 export type GetArticlesArgs = {
+  name?: string;
   currentPage?: number;
   itemsPerPage?: number;
   orderBy?: string;

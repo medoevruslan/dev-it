@@ -5,6 +5,7 @@ import { Article } from '@/prisma/client';
 import { ApiError } from '@/src/exceptions/api-error';
 
 export type GetArticlesArgs = {
+  name?: string;
   currentPage?: number;
   itemsPerPage?: number;
   orderBy?: string;
@@ -77,7 +78,7 @@ const deleteArticle = async (
   }
 };
 
-const parseArticlesFromRSS = async (
+export const parseArticlesFromRSS = async (
   req: Request,
   res: Response,
   next: NextFunction
