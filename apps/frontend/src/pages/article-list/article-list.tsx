@@ -11,6 +11,7 @@ import { Input } from '@/src/components/ui/input';
 import { useDebounce } from 'use-debounce';
 import { Button } from '@/src/components/ui/button';
 import { toast } from 'react-toastify';
+import { Loader } from '@/src/components/ui/loader';
 
 const postsOnPage = ['10', '20', '30', '50', '100'] as const;
 
@@ -33,7 +34,7 @@ export const ArticleList = () => {
     orderBy: sort,
   });
 
-  const [parseArticles] = useParseMutation();
+  const [parseArticles, { isLoading: isParsing }] = useParseMutation();
 
   const handleChangePostsPerPage = handleChangeWithPageReset(
     setPage,
@@ -59,8 +60,8 @@ export const ArticleList = () => {
     setPage(1);
   };
 
-  if (isLoading) {
-    return <Typography variant={'body1'}>Loading...</Typography>;
+  if (isLoading || isParsing) {
+    return <Loader />;
   }
 
   if (!articles?.pagination.totalItems && !isLoading && !isError) {

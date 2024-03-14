@@ -15,6 +15,7 @@ import { ArticleModal } from '@/src/components/article-modal';
 import { useMeQuery } from '@/src/services/auth/auth.service';
 import { EditArticleFormValues } from '@/src/schema/article.schema';
 import { ConfirmModal } from '@/src/components/confirm-modal';
+import { Loader } from '@/src/components/ui/loader';
 
 type Props = {
   className?: string;
@@ -28,6 +29,7 @@ export const ArticleTable = ({
   className,
   articles,
   sort,
+  isLoading,
   onChangeSort,
 }: Props) => {
   const params = useParams<{ articleId: string }>();
@@ -68,6 +70,10 @@ export const ArticleTable = ({
   ) => {
     await updateArticle({ articleId, data });
   };
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>
