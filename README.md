@@ -90,4 +90,4 @@ This project uses Nx for workspace management, which allows for monorepo-style d
 
 To start the development servers for both frontend and backend, run the following commands:
 
-- > dev
+- > dev:`<appname>`
