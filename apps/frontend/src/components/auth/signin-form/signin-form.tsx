@@ -43,7 +43,6 @@ export const SigninForm = ({ onSubmit, apiErrors }: Props) => {
 
   useEffect(() => {
     apiErrors?.forEach((err) => {
-      console.log('set error: ', err.message);
       setError(err.field as keyof Omit<SigninFormValues, 'rememberMe'>, {
         message: err.message,
       });
