@@ -5,7 +5,6 @@ import {
 } from '@reduxjs/toolkit/query';
 import { baseQuery } from '@/src/services/base-api/base-api';
 import { Mutex } from 'async-mutex';
-import { router } from '@/src/router';
 
 const mutex = new Mutex();
 export const baseQueryWithReauth: BaseQueryFn<

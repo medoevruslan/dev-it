@@ -1,6 +1,5 @@
 import Parser from 'rss-parser';
-import { Prisma, PrismaClient } from '@/prisma/client';
-import ArticleCreateManyInput = Prisma.ArticleCreateManyInput;
+import { PrismaClient } from '@/prisma/client';
 
 const prisma = new PrismaClient();
 const parser = new Parser();

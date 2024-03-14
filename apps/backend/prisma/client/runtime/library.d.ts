@@ -1742,8 +1742,7 @@ declare type JsonArgumentValue = number | string | boolean | null | RawTaggedVal
     [key: string]: JsonArgumentValue;
 };
 
-export declare interface JsonArray extends Array<JsonValue> {
-}
+export type JsonArray = Array<JsonValue>
 
 declare type JsonBatchQuery = {
     batch: JsonQuery[];
@@ -2405,7 +2404,7 @@ declare type QueryEngineResult<T> = {
 };
 
 declare type QueryEngineTelemetry = {
-    enabled: Boolean;
+    enabled: boolean;
     endpoint: string;
 };
 

@@ -15,7 +15,7 @@ export const FallbackPage = ({ error, resetErrorBoundary }: FallbackProps) => {
         <div>
           <p>Something went wrong:</p>
           <pre>
-            <code className="text-warning">{error!.message}</code>
+            <code className="text-warning">{error?.message}</code>
           </pre>
         </div>
       </div>

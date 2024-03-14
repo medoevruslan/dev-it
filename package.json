@@ -10,6 +10,8 @@
     "db:clear": "docker compose down -v",
     "db:studio": "nx prisma-studio backend",
     "db:push": "nx prisma-push backend",
+    "lint:frontend": "nx run frontend:lint --fix",
+    "lint:backend": "nx run backend:lint --fix",
     "sb": "nx run frontend:storybook"
   },
   "private": true,
